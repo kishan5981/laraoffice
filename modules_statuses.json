@@ -1,0 +1,19 @@
+{
+    "CartOrders": true,
+    "Contracts": true,
+    "DatabaseBackup": true,
+    "DynamicOptions": true,
+    "InvoiceAdditional": true,
+    "InvoicePayments": true,
+    "ModulesManagement": true,
+    "Orders": true,
+    "Proposals": true,
+    "Quotes": true,
+    "RecurringInvoices": true,
+    "RecurringPeriods": true,
+    "Sendsms": true,
+    "SiteThemes": true,
+    "Smstemplates": true,
+    "Templates": true,
+    "Support": true
+}

@@ -1,0 +1,11 @@
+{
+    "name": "DynamicMenu",
+    "alias": "dynamicmenu",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\DynamicMenu\\Providers\\DynamicMenuServiceProvider"
+    ],
+    "files": []
+}

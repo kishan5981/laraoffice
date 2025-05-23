@@ -1,0 +1,38 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('user_actions', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('action');
+            $table->string('action_model')->nullable()->default(NULL);
+            $table->integer('action_id')->nullable()->default(0);
+           $table->timestamp('created_at')->nullable()->default(NULL);
+            $table->timestamp('updated_at')->nullable()->default(NULL);
+            $table->unsignedInteger('user_id')->nullable()->default(0)->index('259281_5c4fd29b38b49');
+            $table->text('record_original')->nullable()->default(NULL);
+            $table->text('record_update')->nullable()->default(NULL);
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('user_actions');
+    }
+};

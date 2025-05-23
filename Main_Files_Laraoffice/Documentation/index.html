@@ -1,0 +1,2141 @@
+
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">	
+	<title>LaraOffice</title>
+	<link rel="icon" type="image/png" sizes="50x50" href ="assets\images\fav-icon.png">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="copyright" content="">
+	<link rel="stylesheet" href="assets/css/font-awesome-4.7.0/css/font-awesome.min.css" media="all">
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<script src="assets/js/jquery.js"></script>	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>	
+
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>	
+
+	<style>
+		html{background-color:white;color:black;}
+		::-moz-selection{background:#444444;color:#000000;}
+		::selection{background:#444444;color:#000000;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{color:#0000FF;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#000000), to(#0044CC));
+			  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: linear-gradient(top, #0088CC, #0044CC);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+			  border-color: #2fd5e6 #2fd5e6 #2fd5e6;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #2fd5e6 #2fd5e6 #2fd5e6;
+		  background-color: #0044CC;
+		}
+		hr{border-top:1px solid #534051;border-bottom:1px solid #534051;}
+
+		#documenter_sidebar, #documenter_sidebar ul a{
+			/*background-color:#534051;*/
+			background-color: #3c8dbc;
+			color:#ffffff;
+		}
+
+		#documenter_sidebar ul a:hover {
+   			background: #ffffff !important;
+    		color: #b8c7ce !important;
+    		border-top: 1px solid #b8c7ce !important;
+    	}
+
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #000000;-moz-text-shadow:1px 1px 0px #000000;text-shadow:1px 1px 0px #000000;}
+		#documenter_sidebar ul{border-top:1px solid #534051;}
+		#documenter_sidebar ul a{border-top:1px solid #ff;border-bottom:1px solid #534051;color:#ffffff;}
+		#documenter_sidebar ul a:hover{background:#dd4b39;color:#000000;border-top:1px solid #dd4b39;}
+		#documenter_sidebar ul a.current{
+			/*background:#dd4b39;*/
+			background: #ffffff;
+			/*color:#000000;*/
+			color:#3c8dbc;
+			/*border-top:1px solid #dd4b39;*/
+			border-top:1px solid #3c8dbc;
+		}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+
+
+		h1 {
+			color:#3c8dbc;
+			font-family:Georgia;
+		}
+		h3 {
+			color: #3c8dbc;
+			font-family:Comic Sans MS;
+		}
+		h6 {
+			font-family:Lucida Sans Unicode;
+		}
+		h5 {
+			color: #3c8dbc;
+			font-family:Lucida Sans Unicode;
+		}
+		h4 {
+			color: #3c8dbc;
+		}
+		h6.black{
+			color: #222;
+		}
+
+		h6.blue{
+			color: #1039ce;
+		}
+		h6.paleblue{
+			color: #3c8dbc;
+		}
+		h5.blue{
+			color: #1039ce !important;
+		}
+
+		.btn-xs {
+			padding: 3px !important;
+		    margin: 1px !important;
+		    font-size: 15px !important;
+		    font-family: -webkit-body !important;
+		}
+
+		
+
+		.btn-default {
+		    color: #fff;
+		    background-color: #10cab8;
+    			border-color: #10cab8;
+		}	
+		.btn-success {
+		    color: #fff;
+		    background-color: #398439;
+    		border-color: #255625;
+		}	
+		.btn-info {
+		    color: #fff;
+		    background-color: #439e96;
+    		border-color: #439e96;
+		}	
+		.btn-warning {
+		    color: #fff;
+		    background-color: #d58512;
+    		border-color: #985f0d;
+		}	
+		.btn-danger {
+		    color: #fff;
+		    background-color: #f5534e;
+    		border-color: #f96964;
+		}	
+
+		.btn-primary {
+		    color: #fff;
+		    background-color: #609fbd !important;
+    		border-color: #4e87b9 !important;
+		}
+		.btn-basic {
+		    color: #fff;
+		    background-color: #609fbd !important;
+    		border-color: #4e87b9 !important;
+		}
+		.sub_list{
+			padding-left: 1cm;
+
+		}
+		.sub_list li::before {
+            
+            content: "#";            
+            padding-right: 8px;
+            color:#48C9B0;
+		}
+		.list{
+			padding-left: 1cm;
+			list-style-type: none;
+		}
+		.list li::before {
+            
+            content: "#";            
+            padding-right: 8px;
+            color:#48C9B0;
+        }
+.list1{
+			padding-left: 1cm;
+			list-style-type: none;
+		}
+		.list1 li::before {
+            
+            content: "#";            
+            padding-right: 8px;
+            color:#48C9B0;
+        }
+
+		
+	</style>
+	
+</head>
+<body class="documenter-project-tutor">
+
+	<div id="documenter_sidebar">
+
+		<a href="#documenter_cover" id="documenter_logo"><br><br><img src="assets\images\logo2.png"
+		align="center" width="173" height="56"></a>
+				<ul id="documenter_nav">
+						<li><a href="#general-information" title="requirements">General Information&nbsp;&nbsp;&nbsp;(3)<span class="pull-right-container" style="position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -7px;">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span></a>
+                                <ul>
+                	                	<li><a href="#system-requirements" title="requirements">System Requirements</a></li>
+                	                	<li><a href="#available-roles" title="requirements">Available User Roles</a></li>
+                	                	<li><a href="#installation" title="requirements">Installation (2-Steps)</a></li>
+                	                </ul>
+
+
+			</li>	
+						<li><a href="#sales" title="requirements">Sales&nbsp;&nbsp;&nbsp;(1)<span class="pull-right-container" style="position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -7px;">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span></a>
+                                <ul>
+                	                	<li><a href="#overview-of-invoices-recurring-invoices-quotes" title="requirements">Overview of Invoices/Recurring invoices/Quotes</a></li>
+                	                </ul>
+
+
+			</li>	
+						<li><a href="#contact-management" title="requirements">Contact Management&nbsp;&nbsp;&nbsp;(2)<span class="pull-right-container" style="position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -7px;">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span></a>
+                                <ul>
+                	                	<li><a href="#contacts" title="requirements">Contacts</a></li>
+                	                	<li><a href="#mail-chimp-email-campaigns" title="requirements">Mailchimp email Campaigns</a></li>
+                	                </ul>
+
+
+			</li>	
+						<li><a href="#users-roles" title="requirements">Users &amp; Roles&nbsp;&nbsp;&nbsp;(12)<span class="pull-right-container" style="position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -7px;">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span></a>
+                                <ul>
+                	                	<li><a href="#users" title="requirements">Users</a></li>
+                	                	<li><a href="#client-projects" title="requirements">Employee</a></li>
+                	                	<li><a href="#client-projects-for-client" title="requirements">Clients</a></li>
+                	                	<li><a href="#purchase-orders-for-supplier" title="requirements">Supplier</a></li>
+                	                	<li><a href="#projects-for-project-manager" title="requirements">Project Manager</a></li>
+                	                	<li><a href="#product-management-for-stock-manager" title="requirements">Stock Manager</a></li>
+                	                	<li><a href="#support-for-sales-manager" title="requirements">Sales Manager</a></li>
+                	                	<li><a href="#purchase-orders-for-business-manager" title="requirements">Business Manager</a></li>
+                	                	<li><a href="#accounting-system-for-executives" title="requirements">Executives</a></li>
+                	                	<li><a href="#sale-agent" title="requirements">Sale Agent</a></li>
+                	                	<li><a href="#customer" title="requirements">Customer</a></li>
+                	                	<li><a href="#leads" title="requirements">Leads</a></li>
+                	                </ul>
+
+
+			</li>	
+						<li><a href="#projects" title="requirements">Projects&nbsp;&nbsp;&nbsp;(2)<span class="pull-right-container" style="position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -7px;">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span></a>
+                                <ul>
+                	                	<li><a href="#projects" title="requirements">Projects</a></li>
+                	                	<li><a href="#client-projects" title="requirements">Employee</a></li>
+                	                </ul>
+
+
+			</li>	
+						<li><a href="#accounting" title="requirements">Accounting&nbsp;&nbsp;&nbsp;(4)<span class="pull-right-container" style="position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -7px;">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span></a>
+                                <ul>
+                	                	<li><a href="#incomes" title="requirements">Incomes</a></li>
+                	                	<li><a href="#expenses" title="requirements">Expenses</a></li>
+                	                	<li><a href="#monthly-report" title="requirements">Monthly Report</a></li>
+                	                	<li><a href="#accounts-transfers" title="requirements">Accounts & Transfers</a></li>
+                	                </ul>
+
+
+			</li>	
+						<li><a href="#orders" title="requirements">Cart Orders&nbsp;&nbsp;&nbsp;(3)<span class="pull-right-container" style="position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -7px;">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span></a>
+                                <ul>
+                	                	<li><a href="#orders-summary" title="requirements">Orders Summary</a></li>
+                	                	<li><a href="#orders" title="requirements">Add Orders</a></li>
+                	                	<li><a href="#view-orders" title="requirements">View Orders</a></li>
+                	                </ul>
+
+
+			</li>	
+						<li><a href="#global-settings" title="requirements">Global Settings&nbsp;&nbsp;&nbsp;(29)<span class="pull-right-container" style="position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -7px;">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span></a>
+                                <ul>
+                	                	<li><a href="#dynamic-options" title="requirements">Dynamic Options</a></li>
+                	                	<li><a href="#currencies" title="requirements">Currencies</a></li>
+                	                	<li><a href="#templates" title="requirements">Email Templates</a></li>
+                	                	<li><a href="#sms-templates" title="requirements">SMS Templates</a></li>
+                	                	<li><a href="#payment-gateways" title="requirements">Payment gateways</a></li>
+                	                	<li><a href="#taxes" title="requirements">Taxes</a></li>
+                	                	<li><a href="#discounts" title="requirements">Discounts</a></li>
+                	                	<li><a href="#translations" title="requirements">Translations</a></li>
+                	                	<li><a href="#languages" title="requirements">Languages</a></li>
+                	                	<li><a href="#database-files-backups" title="requirements">Database & Files Backups</a></li>
+                	                	<li><a href="#site-themes" title="requirements">Site Themes</a></li>
+                	                	<li><a href="#master-settings" title="requirements">Master Settings</a></li>
+                	                	<li><a href="#mailchimp-settings" title="requirements">Mailchimp Settings</a></li>
+                	                	<li><a href="#purchase-order-settings" title="requirements">Purchase Order Settings</a></li>
+                	                	<li><a href="#login-settings" title="requirements">Login Settings</a></li>
+                	                	<li><a href="#quote-cronjob-settings" title="requirements">Quote Cronjob Settings</a></li>
+                	                	<li><a href="#invoice-cronjob-settings" title="requirements">Invoice Cronjob Settings</a></li>
+                	                	<li><a href="#quote-settings" title="requirements">Quote Settings</a></li>
+                	                	<li><a href="#translations-2" title="requirements">Translations Settings</a></li>
+                	                	<li><a href="#order-settings" title="requirements">Order Settings</a></li>
+                	                	<li><a href="#receipt-settings" title="requirements">Receipt Settings</a></li>
+                	                	<li><a href="#invoice-settings" title="requirements">Invoice Settings</a></li>
+                	                	<li><a href="#credit-note-settings" title="requirements">Credit Note Settings</a></li>
+                	                	<li><a href="#sms-settings" title="requirements">SMS Settings</a></li>
+                	                	<li><a href="#currency-settings" title="requirements">Currency Settings</a></li>
+                	                	<li><a href="#payment-gateways-settings" title="requirements">Payment Gateways Settings</a></li>
+                	                	<li><a href="#email-settings" title="requirements">Email Settings</a></li>
+                	                	<li><a href="#site-settings" title="requirements">Site Settings</a></li>
+                	                	<li><a href="#seo-settings" title="requirements">SEO Settings</a></li>
+                	                </ul>
+
+
+			</li>	
+						<li><a href="#generated-reports" title="requirements">Generated Reports&nbsp;&nbsp;&nbsp;(8)<span class="pull-right-container" style="position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -7px;">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span></a>
+                                <ul>
+                	                	<li><a href="#expense-report" title="requirements">Expense Report</a></li>
+                	                	<li><a href="#income-report" title="requirements">Income Report</a></li>
+                	                	<li><a href="#users-report" title="requirements">Users Report</a></li>
+                	                	<li><a href="#user-roles" title="requirements">User Roles</a></li>
+                	                	<li><a href="#tasks-report" title="requirements">Tasks Report</a></li>
+                	                	<li><a href="#assets-report" title="requirements">Assets Report</a></li>
+                	                	<li><a href="#products-report" title="requirements">Products Report</a></li>
+                	                	<li><a href="#purchase-orders-report" title="requirements">Purchase Orders Report</a></li>
+                	                </ul>
+
+
+			</li>	
+							
+		</ul>
+	</div>	
+
+	<div id="documenter_content">	
+
+<h1 id="general-information">General Information</h1> 		<section id="system-requirements">
+			<div class="page-header"><h3>System Requirements</h3><hr class="notop"></div>
+			LaraOffice CRM(Customer Relationship Management) has a few system requirements. LaraOffice developed on Laravel version <strong>5.7</strong>. The following are a detailed list.
+
+<strong>Minimum Requirements</strong>
+<ul class="list">
+ 	<li>PHP &gt;= 7.1.3</li>
+ 	<li>OpenSSL PHP Extension</li>
+ 	<li>PDO PHP Extension</li>
+ 	<li>Mbstring PHP Extension</li>
+ 	<li>Tokenizer PHP Extension</li>
+ 	<li>XML PHP Extension</li>
+ 	<li>Ctype PHP Extension</li>
+ 	<li>JSON PHP Extension</li>
+ 	<li>BCMath PHP Extension</li>
+ 	<li>.env (Laravel Environment file) should be writable</li>
+</ul>		</section>
+ 		 		<section id="available-roles">
+			<div class="page-header"><h3>Available User Roles</h3><hr class="notop"></div>
+			
+<ul class="list1">
+ 	<li class="western">
+<strong>Can manage Invoices &amp; Recurring Invoices</strong></li>
+
+<ul class="sub_list" style="list-style-type: none;">
+ 	<li class="western">
+Create, Edit, Delete</li>
+ 	<li class="western">
+Can send emails to customer regarding payments (Paymetn remidner, Over due reminder, Refund),</li>
+ 	<li class="western">
+Can send SMS to customer regarding payments (Paymetn remidner, Over due reminder, Refund)
+</li>
+ 	
+<li class="western">Can record payments</li>
+
+ 	<li class="western">
+Can Change Status (Paid, Due, Partially Paid, Cancelled)</li>
+
+ 	<li class="western">
+Can create invoice tasks
+</li>
+ 	<li class="western">Can create invoice reminders</li>
+ 	<li class="western">Can duplicate the invoice to create the new invoice based on the present invoice.</li>
+ 	<li class="western">Upload documents</li>
+ 	<li class="western">Download PDF invoice</li>
+ 	<li class="western">Print Invoice</li>
+</ul>
+<ul>
+ 	<li class="western">Can manage(create, edit, delete, sending emails, SMS, Record Refunds) Credit Notes</li>
+ 	<li class="western">Can manage(create, edit, delete, sending emails, SMS) Quotes</li>
+ 	<li class="western">Can manage(create, edit, delete, sending emails, SMS) Proposals</li>
+ 	<li class="western">Can manage(create, edit, delete, sending emails, SMS) Contracts</li>
+ 	<li class="western">Can manage(create, edit, delete) Products/Items</li>
+ 	<li class="western">Can manage(create, edit, delete, sending emails, SMS) Purchase Orders</li>
+ 	<li class="western">Can manage(create, edit, delete) Contacts &amp; Can give user access to a contact</li>
+ 	<li class="western">Can manage(create, edit, delete) Leads</li>
+ 	<li class="western">Can manage(create, edit, delete) Projects</li>
+ 	<li class="western">Can manage(create, edit, delete) Accounting</li>
+ 	<li class="western">Can manage(create, edit, delete) Orders</li>
+ 	<li class="western">Can manage(create, edit, delete) Tasks</li>
+ 	<li class="western">Can manage(create, edit, delete) Assets Management</li>
+ 	<li class="western">Can manage(create, edit, delete) Quick Notifications</li>
+ 	<li class="western">Can manage(create, edit, delete) Knowledgebase</li>
+ 	<li class="western">Can manage(create, edit, delete) Content Management</li>
+ 	<li class="western">Can manage role permissions</li>
+ 	<li class="western">Can change any setting from Master Settings</li>
+</ul>
+		</section>
+ 		 		<section id="installation">
+			<div class="page-header"><h3>Installation (2-Steps)</h3><hr class="notop"></div>
+			LaraOffice available with build-in installer. 2 Step installation process very simple and takes no time.
+<ol>
+ 	<li>Unzip the contents of the zip file to a folder on your computer. You will find two folders, One folder contains documentation &amp; another is LaraOffice.</li>
+ 	<li>Upload the Entire LaraOffice folder to your website/server. Next, you can rename the folder to whatever you like (laraOffice, CRM, finance etc..)</li>
+ 	<li>Now visit the uploaded location using your web browser to run the installer process (If you are installing on localhost, please add "public" at end of the URL. Eg: http://localhost/yourfoldername/public). This screen will give you the data you need to have before proceed to install<br><br><br><br><img class="aligncenter  wp-image-2237" src="assets/images/2019/07/installation_page1.png" alt="" width="758" height="531" /></li><br><br>
+ 	<li>After reading the instructions you can proceed for the next process called requirements. You should have to maintain the below requirements to run the laraOffice project <br><br><br><br><img class="aligncenter size-full wp-image-2238" src="assets/images/2019/07/installation_page2.png" alt="" width="819" height="540" /></li><br><br>
+ 	<li>After getting requirements, please click on next button to install the Laraoffice project.</li>
+ 	<li>Before going to the installation process you need to fill the database related fields.<br><br><br><br><img class="aligncenter size-full wp-image-2239" src="assets/images/2019/07/installation_page3.png" alt="" width="937" height="528" /></li><br><br>
+ 	<li>Finally, go to the installation process by clicking on the install button.</li>
+</ol>
+<p>Note: If you see blank page after installation, it might be your compiled folder permission is not writable. Please make permission 777 for following folders inside the directory by running follwing commands from console.</p>
+<ol>	
+<li><b>chmod -R 777 storage/</b></li>
+<li><b>chmod -R 777 bootstrap/</b></li>
+<li><b>chmod -R 777 public/</b></li>
+</ol>
+</section>
+ 		<h1 id="sales">Sales</h1> 		<section id="overview-of-invoices-recurring-invoices-quotes">
+			<div class="page-header"><h3>Overview of Invoices/Recurring invoices/Quotes</h3><hr class="notop"></div>
+			Invoices allow you to bill a Client for your products and helps you keep track of your Sales income through <strong>LaraOffice The Ultimate CRM</strong>. Invoices can be created and sent to customers easily within seconds. Invoices can be sent at any time by saving them in a draft to the clients via email and can be printed as a PDF hard copy.
+<h3><strong>Overview:</strong></h3>
+A Invoice in LaraOffice system passes through number of stages:
+
+<strong>Draft</strong>: Invoices can be stored in draft that are yet to be sent until the status is changed to published.
+
+<strong>Published</strong>: When the Invoices are sent to customer but payment is yet to be paid.
+
+<strong>Paid</strong>: When the Invoice payment is done by Customer completely.
+
+<strong>UnPaid</strong>: When the Invoice payment is not yet done by Customer.
+
+<strong>Partial</strong>: When the Invoice payment is done by Customer partially.
+<div id="overview" class="section">
+
+<strong>Overdue</strong>: When the invoice payment has crossed its due date.
+
+</div>		</section>
+ 		<h1 id="contact-management">Contact Management</h1> 		<section id="contacts">
+			<div class="page-header"><h3>Contacts</h3><hr class="notop"></div>
+			What is <strong>Contact</strong> ?
+
+The record which stores vital information of a particular entity is entitled as "Contact".
+<h3 id="new-contact">New Contact:</h3>
+In order to create a <strong>New contact</strong>, required fields are as follows:
+
+<p>(i) <strong>Companies: </strong>Data in this field is fetched fromContact Management<strong>--&gt;Companies--&gt;</strong><strong>Add new </strong>Company<strong>.</strong></p>
+
+<p>(ii) <strong>Contact Groups:</strong>Data in this field is fetched from Contact Management<strong>--&gt;Contact Groups--&gt;</strong><strong>Add new </strong>Contact group<strong>.</strong>
+</p>
+<p>(iii) <strong>Countries:</strong>Data in this field is fetched from Contact Management<strong>--&gt;Country--&gt;Add new </strong>Country<strong>.</strong></p>
+
+<p>(iv) <strong>Contact Types:</strong>Data in this field is fetched from Contact Management<strong>--&gt;Contact Types--&gt;Add new </strong>Contact Type<strong>.</strong></p>
+
+To create new contact, go to Contact Management<strong>--&gt;Contacts</strong>--&gt;<strong>Add new</strong> Contact.
+
+A contact is activated to User by accessing the <strong>Create User for this Contact </strong>field.
+
+This activation of contact can be done in two ways,
+
+<p>(i) <strong>Create and send activation email:</strong>
+
+This involves creating of User without activation and sending an activation link to mail with auto generated password. On accessing the link the account gets activated.</p>
+
+<p>(ii) <strong>Create and activate</strong>:
+
+This involves creating of User and activation of account at the <strong>same time</strong>.
+
+Every User is categorised into <strong>Contact types</strong> as follows;</p><br>
+
+<strong>1.Executives</strong><br>
+<strong>2.Suppliers</strong><br>
+<strong>3.Business Manager</strong><br>
+<strong>4.Clients</strong><br>
+<strong>5.Employees</strong><br>
+<strong>6.Sales Manager</strong><br>
+<strong>7. Sales agent</strong><br>
+<strong>8. Project Manager</strong><br>
+<strong>9. Stock Manager<br>10. Supplier</strong><br><br>
+
+Contact type gives the designation of a particular contact.
+
+Example: You want to create the customer, then go to <br>Contact Management--&gt;<strong>Contacts</strong>--&gt;<strong>Customers</strong> and click on <strong>Add new</strong> button.<br><br>
+
+<strong>List of Contacts:</strong><br>
+
+The page which describes all the contacts with respect to all existing contact types.
+
+<br><br><img class="aligncenter size-full wp-image-1549" src="assets/images/2019/07/contacts-1.png" alt="" width="1100" height="583" /><br><br>
+
+Creating/Editing of User can also be done directly by clicking on the <strong>Create/Edit User </strong>buttons in Contacts page as shown above.
+
+<strong>Contact Creation page:</strong>
+
+<strong><br><br><img class="aligncenter wp-image-2262" src="assets/images/2019/07/Screenshot_6.png" alt="" width="828" height="346" /></strong>
+<ul>
+ 	<li><strong>First name: </strong>Contact first name.</li>
+ 	<li><strong>Last name: </strong>Contact last name.</li>
+ 	<li><strong>Email: </strong>User for login and receiving emails.</li>
+ 	<li><strong>Create User for this Contact:</strong> By selecting Yes, this contact person is redirected to User's list.</li>
+ 	<li><strong>Contact Type:</strong> Contact designation in a system.</li>
+ 	<li><a href="#currencies"><strong>Currency</strong></a>: In this field, the data is filled by default based on the customers currency.</li>
+ 	<li><strong>Companies: </strong>The cluster which contains the details of the company of the person.</li>
+ 	<li><strong>Group:</strong> A group specifies the domain of the person.</li>
+ 	<li><strong>Phone:</strong> Contact's phone number.</li>
+ 	<li><strong>Skype:</strong> Contact's skype ID.</li>
+ 	<li><strong>Tax ID:</strong> Tax ID number.</li>
+ 	<li><strong>Address:</strong> Contact's Address.</li>
+ 	<li><strong>Delivery/Shipping Address:</strong> If any Invoice, Order etc are should be delivered to Shipping or normal address based on their selection.</li>
+</ul>
+<br><br><img class="aligncenter size-full wp-image-1550" src="assets/images/2019/07/contact_view.png" alt="" width="1100" height="570" /><br><br>
+
+After Creating the Contact, click on <strong>View</strong> of respective contact which allows monitoring the other modules at a glance.
+
+<strong>Contact Notes:</strong>
+
+Contact notes allows admin to send any notes (Both Text and Attachments) to a particular contact. <strong>Send email </strong>is an advanced feature to send the notes through email by click on <strong>Send email</strong> button in Contacts page.
+
+<strong>Contact Documents:</strong>
+
+This feature allows sending documents to a particular contact.
+
+<strong>CSV Import:</strong>
+
+The file format which stores the data in a tabular form such as spreadsheets, excel sheets etc. The <strong>CSV</strong> is abbreviated as <strong>Comma-Separated Values.</strong>
+
+The CSV Import allows to import a huge data of contacts with their respective fields.		</section>
+ 		 		<section id="mail-chimp-email-campaigns">
+			<div class="page-header"><h3>Mailchimp email Campaigns</h3><hr class="notop"></div>
+			The gateway which sends the email to all the existing contacts to run a campaign through a digital platform. This feature allows scheduling of campaign.
+
+Mailchimp email campaigns are run by the <a href="#mailchimp-settings"><strong>Mailchimp Settings</strong> </a>in Global Settings--&gt;<strong>Master Settings</strong>.
+
+Here the added <a href="#contacts">contacts</a> will be auto sync to Mailchimp module, then we can send the a large number of emails to the contacts by clicking on Run campaign.
+
+<br><br><img class="aligncenter size-full wp-image-1536" src="assets/images/2019/07/mailchimp_list.png" alt="" width="1100" height="502" />
+<br><br>
+
+Mailchimp List page shows,
+
+<p><strong>Name</strong>: Mailchimp list name.<br></p>
+
+<p><strong>Member count</strong>: Members in list.<br></p>
+
+<p><strong>Is schedule</strong>: Scheduling time to run the campaign.<br></p>
+
+<p><strong>Last run</strong>: Last run campaign date.<br></p>
+<br>
+<p>We can view the members who are in the list, by clicking on <strong>View.</strong><br></p>
+
+<br><br><img class="aligncenter size-full wp-image-2073" src="assets/images/2019/07/mailchimp.png" alt="" width="824" height="382" /><br><br>
+
+By clicking on <strong>Run campaign</strong>, we can manage the campaign and its template.		</section>
+ 		<h1 id="users-roles">Users &amp; Roles</h1> 		<section id="users">
+			<div class="page-header"><h3>Users</h3><hr class="notop"></div>
+			<h3><strong>Roles:</strong></h3>
+Every contact type is assigned a <strong>Role.</strong>The following roles are,
+
+<strong>          1. Administrator<br>                    2</strong>. <strong>Executives</strong>
+
+<br><strong>          3</strong>. <strong>Suppliers</strong><br><strong>                        4</strong>. <strong>Business Manager</strong><br>
+
+<strong>          5</strong>. <strong>Clients </strong><br><strong>                           </strong><strong>6.Employees</strong>
+
+<strong>          7. Sales Manager<br>                 8. Sales agent</strong>
+
+<strong>          9. Project Manager      <br>           10.Stock Manager</strong><br>
+
+<strong>          11.Supplier</strong><br>
+
+You can manage the <strong>Modules</strong> to the User Roles by selecting particular modules they need for that respective Role.
+
+These modules are reflecting from the Permissions given in <strong>Permissions Module</strong>.
+
+These permissions allow the user whether to access the module or not. These permissions can also be deleted if not required.
+<h3><strong>Contact Permissions:</strong></h3>
+In Laraoffice CRM, you can configure permissions for each <strong>Role</strong> to meet your requirements. The customers area offers various features but if you are not using a specific feature, you can remove the contact permission for this feature and the feature wont be visible in customers area.
+
+Example: If the contact doesnt have permission for Create Invoices, it wont be able to create invoices when this contact is logged in.
+
+We can manage all the permissions at anytime based on your requirements you need.
+<h3><strong>Departments:</strong></h3>
+These will reflect while <strong>Creating/Editing</strong> the <strong>User</strong> for assigning different departments to the Users.
+<h3><strong>Users:</strong></h3>
+Login access to a <strong>User</strong> can be managed by <strong>Activating/Suspending</strong> the User in Users module. This feature is applicable to all the users in Users module.
+
+And also we can track the User's Status.
+
+<br><br><img class="aligncenter size-full wp-image-1534" src="assets/images/2019/07/users_page_index.png" alt="" width="1100" height="559" />
+<h3><strong>User view :</strong></h3>
+Admin can have track of the particular User's actions.
+
+<br><br><img class="aligncenter wp-image-1012" src="assets/images/2019/07/Screenshot-from-2019-07-12-13-19-43-e1562917820384-1024x507.png" alt="" width="830" height="411" /><br><br>
+
+Click on <strong>View</strong>, then you will monitor all the actions that the User has done in your system.
+<h3><strong>User Actions</strong>:</h3>
+This feature shows complete Users log of all the activities such as Surfing or doing any action on this system.
+<h3><strong>User Edit:</strong></h3>
+<br><br><img class="aligncenter size-full wp-image-2080" src="assets/images/2019/07/users_colors-1.png" alt="" width="1100" height="585" /><br><br>
+
+Admin can manage the site colors and themes of particular user.<br>
+
+The <strong>Color Theme</strong> and <strong>Color Skin</strong> fields selected in the above image will reflect in the <strong>User's panel</strong> as shown in below figure.
+
+<br><br><img class="aligncenter size-full wp-image-2081" src="assets/images/2019/07/employeez_colors.png" alt="" width="1100" height="590" /><br><br>		</section>
+ 		 		<section id="client-projects">
+			<div class="page-header"><h3>Employee</h3><hr class="notop"></div>
+			<span style="font-weight: 400;">A person who is hired by an organization in order to fulfill the requirements of an organization for wages. An employee might work for the organization either part-time or full-time under a contract of employment, whether oral or written, express or implied, and has recognized rights and duties. LaraOffice provides an employee all rights, manages his wages and work, and maintains transparency between the employee and employer.</span>
+
+Unlike project manager, employees can only have access to view action in projects module.
+
+Refer the link below to know more about the view action in <a href="#projects"><strong>Project</strong></a> module for employee.		</section>
+ 		 		<section id="client-projects-for-client">
+			<div class="page-header"><h3>Clients</h3><hr class="notop"></div>
+			<span style="font-weight: 400;">A client is somebody who buys a product or pays for services. Companies and other organizations may also be clients. Unlike customers, clients usually have an arrangement or a relationship with the company/organization. In LaraOffice clients play a role as important as customers bringing profits to the organization.</span>
+
+These are the modules client can have access to:
+<ul>
+ 	<li><a href="#projects">Projects</a></li>
+ 	<li><a href="#articles-2">Content Management</a> (Only Articles)</li>
+</ul>
+Access the above links for more details about the working.		</section>
+ 		 		<section id="purchase-orders-for-supplier">
+			<div class="page-header"><h3>Supplier</h3><hr class="notop"></div>
+			<span style="font-weight: 400;">The person who supplies products/resources to an organization. A supplier may be distinguished from a contractor or subcontractor, who commonly adds specialized input to deliverables. LaraOffice gives suppliers permissions to send quick notifications, manage content and purchase orders.</span>
+
+Suppliers have access to <a href="#purchase-orders"><strong>Purchase Orders</strong></a> and <a href="#content-management"><strong>Content Management</strong></a> modules in this LaraOffice.		</section>
+ 		 		<section id="projects-for-project-manager">
+			<div class="page-header"><h3>Project Manager</h3><hr class="notop"></div>
+			Project managers have the responsibility of the planning, procurement and execution of a project within a defined scope in the field of project management. They are the Task assigners for the project to the employees. Project managers are the first point of contact for any issues.
+
+<span style="font-weight: 400;"> Project management is the responsibility of a project manager. This individual seldom participates directly in the activities that produce the end result, but rather strives to maintain the progress, mutual interaction and tasks of various parties in such a way that reduces the risk of overall failure, maximizes benefits and minimizes costs.</span>
+
+The Project Manager has access only to the <a href="#projects"><strong>Projects</strong> </a>module in this LaraOffice.
+
+To know more details about the working and actions that take place in projects module are discussed in the admin role.		</section>
+ 		 		<section id="product-management-for-stock-manager">
+			<div class="page-header"><h3>Stock Manager</h3><hr class="notop"></div>
+			<span style="font-weight: 400;">In LaraOffice stock manager is a person who is responsible for managing storage warehouses or delivering products to retail stores and has permission to manage content management. Sometimes, stock managers may be in charge of purchasing products. Stock managers need to understand the stock mix of a company and the different demands on that stock. These demands may be influenced by both external and internal factors and are balanced by the creation of purchase order requests to keep supplies at a reasonable or prescribed levels.</span>
+
+LaraOffice gives authority to stock manager only to product management.
+
+These links will help you better in knowing the working of these modules in detail.
+<ul>
+ 	<li>Few features of Product Management</li>
+</ul>
+<a href="#products">Products</a>
+
+<a href="#categories">Categories</a>
+
+<a href="#warehouses">Warehouses</a>
+<ul>
+ 	<li><a href="#articles-2">Content Management</a> (only Articles)</li>
+</ul>		</section>
+ 		 		<section id="support-for-sales-manager">
+			<div class="page-header"><h3>Sales Manager</h3><hr class="notop"></div>
+			<span style="font-weight: 400;">In LaraOffice sales manager is a person who manages all the sales agents, their details, products, purchase orders and product transfer. In other words, the sales manager is the person who has control over product management and all the purchase order actions. Sales manager can also send quick notifications and have command over recurring invoices.</span>
+
+These are the modules a Sales Manager can have access to. The listed modules have links to pages that give detailed information about the working of these modules.
+<ul>
+ 	<li><a href="#sales">Sales</a></li>
+ 	<li><a href="#product-management">Product Management</a></li>
+ 	<li><a href="#orders">Cart Orders</a></li>
+ 	<li><a href="#knowledgebase">Knowledgebase</a></li>
+</ul>		</section>
+ 		 		<section id="purchase-orders-for-business-manager">
+			<div class="page-header"><h3>Business Manager</h3><hr class="notop"></div>
+			<span style="font-weight: 400;">A business manager is one who monitors the work of others to have an efficient business and make a large profit. In order to manage these, they should have a working knowledge of the following areas and should be a specialist in one or more fields, such as finance, marketing or public relations. He is the one who has control over all the transactions, profits and losses of the company or organization.</span>
+
+Business Manager has authority over the below-mentioned modules equals to admin. In order to know more details about the working and actions of the modules access the links given below.
+
+The modules available for Business Manager are <strong><a href="#sales">Sales</a> </strong>( Excluding Credit Notes, Proposals, Contracts ), <a href="#product-management"><strong>Product Management</strong></a>, and <a href="#accounting"><strong>Accounting</strong></a>.		</section>
+ 		 		<section id="accounting-system-for-executives">
+			<div class="page-header"><h3>Executives</h3><hr class="notop"></div>
+			<span style="font-weight: 400;">An executive is a powerful person who is responsible for making things run in a planned manner. In LaraOffice the executive is the organ exercising authority in and holding responsibility for managing the working of the organization. He has the authority and responsibility to execute and enforce laws regarding the organization.</span>
+
+The main difference between Admin and Executive in LaraOffice is that the executive cannot have a multi delete option. The executive has authority over all the modules that are given to admin.
+
+To have more details about the working of the modules go through the <a href="https://wordpress-127011-898706.cloudwaysapps.com/">link</a>.		</section>
+ 		 		<section id="sale-agent">
+			<div class="page-header"><h3>Sale Agent</h3><hr class="notop"></div>
+			LaraOffice provides a platform for Sales Agents who are self-employed salespersons whose works are usually alone or work for perhaps several non competing companies. They obtain orders from companies and are paid commission on those orders. The Sales Agents usually work in a specific area of industry and within geographical limits. In LaraOffice a sales agent can send quick notifications and have access to invoices, recurring invoices, and Quotes.
+
+These are the modules a sale agent can have access to:
+<ul>
+ 	<li><a href="#invoices">Invoices</a></li>
+ 	<li><a href="#quotations-estimates">Quotes</a></li>
+ 	<li><a href="#recurring-invoices">Recurring invoices</a></li>
+</ul>
+Click on the above links to know more about the working and features of these modules.		</section>
+ 		 		<section id="customer">
+			<div class="page-header"><h3>Customer</h3><hr class="notop"></div>
+			A customer is an individual or business that purchases another company's products customers are important because they drive revenues. Without Customer, businesses have nothing to offer. To understand how to meet the needs of the customers, the businesses closely monitor their customer relationships to identify ways to improve service and products. The way businesses treat their customers can give them a competitive edge.
+
+A customer has only access to view all the sales present in the system
+
+In order to learn more about the working in all the view pages of sales go through the links below
+<ul>
+ 	<li><a href="#vi">Invoices</a></li>
+ 	<li><a href="#credit-notes-view-and-its-actions">Credit notes</a></li>
+ 	<li><a href="#view-quote">Quotations</a></li>
+ 	<li><a href="#sales-proposals-2">Proposals</a></li>
+ 	<li><a href="#contracts">Contracts</a></li>
+ 	<li><a href="#view-recurring-invoice">Recurring Invoice</a></li>
+ 	<li><a href="#articles-2">Content management</a>(Articles)</li>
+</ul>		</section>
+ 		 		<section id="leads">
+			<div class="page-header"><h3>Leads</h3><hr class="notop"></div>
+			<span style="font-weight: 400;">A Lead is someone who has shown interest in the companys product may eventually become a client but it possesses very little information about that person. In the LaraOffice, Leads are people who are in the first stage of the sales process. If they clear the first stage, they become Proposal and move on to the second stage of the process Quotation. Basically, The leads generation in LaraOffice helps to :</span>
+<ul>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">Track and sort lead details</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">Manage lead sources</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">Maintains a constant follow-ups of the leads</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">Assigning the task of tracking lead activities to salespeople.</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">Monitoring the status of lead's interest by communicating with them.</span></li>
+</ul>
+<span style="font-weight: 400;">In other words, Leads are partial customers who play a vital role in any business. Leads are gathered through many means of communication mostly telephonic call.</span>
+
+<span style="font-weight: 400;">Gathering leads also includes collecting of few necessary details such as name, address, phone number and email. All these collected details are imported into the system through the leads module. The view page of leads is as follows:</span>
+
+<span style="font-weight: 400;"><br><br><img class="aligncenter size-full wp-image-2501" src="assets/images/2019/07/pasted-image-0.png" alt="" width="1100" height="627" /> The following actions can be performed in leads view page:</span>
+
+1.<strong> Add new</strong>: It allows to add the new lead that was gathered through communication gateway.
+
+<br><br><img class="aligncenter size-full wp-image-2502" src="assets/images/2019/07/lara.jpg" alt="" width="1100" height="553" />
+
+These above fields help in creating a new lead.
+
+The <strong>+</strong> icon symbol beside some fields allows you to directly add the particulars through a Pop-up menu to their respective modules.to add directly from here to those respective modules.
+
+<strong>2.CSV</strong> <strong>Import:</strong> This option helps in uploading bulk leads at a time through "<strong>.csv</strong>" files.
+
+<br><br><img class="aligncenter size-full wp-image-2504" src="assets/images/2019/07/lara1-1.jpg" alt="" width="1100" height="576" />
+
+<strong>3.List</strong>: The list allows to perform these particular actions on respective leads
+<ul>
+ 	<li><strong>View</strong>: Display all the lead details on one page.</li>
+ 	<li><strong>Edit</strong>: Helps in editing the lead details.</li>
+ 	<li><strong>Send email: </strong>Allows you to send emails to that particular lead by the use of email templates.</li>
+ 	<li><strong>Delete: </strong>Remove the lead from the list.</li>
+</ul>
+		</section>
+ 		<h1 id="projects">Projects</h1> 		<section id="projects">
+			<div class="page-header"><h3>Projects</h3><hr class="notop"></div>
+			LaraOffice helps you to manage costs you can set project budgets, record expenses and track timesheets against the project and tasks. If youre charging a customer for your work, you have the flexibility to charge fixed amounts as work is completed and/or set time-based billable rates. Hourly rates can be set for each team member.
+
+Projects page consists of two features,
+
+1. Summary
+
+2. Filter
+
+These provide a general overview of the Project status for a business.
+
+<strong>1.Projects Summary</strong>:
+
+Projects summary is of two types,
+
+1.1 Progress
+
+1.2 Circle
+
+The above types provides the information below:
+
+<strong>Total Client Projects</strong>: Total number of Client Projects.
+
+<strong>Medium Priority:</strong> Medium Priority projects.
+
+<strong>High Priority: </strong>HighPriority projects.
+
+<strong>Urgent Priority: </strong>UrgentPriority projects.
+
+By clicking on<strong>Medium Priority Projects</strong>, all the Medium Priority Projects are filtered. Similarly for remaining High,Urgent Projects respectively.
+
+<strong>   1</strong>.<strong>1 Progress</strong>type summary:
+
+This summary gives the data in figures (<a href="#currencies">currency</a> ) and Projects count.
+
+<br><br><img class="aligncenter size-full wp-image-2378" src="assets/images/2019/07/PS.png" alt="" width="1100" height="571" />
+
+These can again be filtered based on<a href="#currencies">currency</a> ( like USD, INR, Dinar etc). This allows fetching of all the Projects either medium, high or urgent with that particular <a href="#currencies">currency</a>.
+
+<strong>   1.2 Circle</strong>type summary:
+
+This summary gives the data in percentage ( Projects ) and the amount of all the Projects.
+
+<br><br><img class="aligncenter size-full wp-image-2377" src="assets/images/2019/07/PC.png" alt="" width="1100" height="616" />
+
+<strong>2. Projects Filter</strong>:
+
+Projects filter allows us to filter the projects by entering the required type in the fields.
+
+These fields are,
+
+2.1<strong>Date</strong>: These are the options available in the date filter.
+
+2.1.2 Today,
+
+2.1.3 Yesterday
+
+2.1.4 Last 7 days
+
+2.1.5 Last 30 days
+
+2.1.6 This Month
+
+2.1.7 Last Month
+
+2.1.8 This Year
+
+2.1.9 Last Year
+
+2.1.10 All time
+
+2.1.11 Custom Range  Specific dates can be given.
+
+2.2<strong>Type</strong>: These are of 3 types.
+
+2.2.1 Created date
+
+2.2.2 Projects start date
+
+2.2.3 Projects due date
+
+2.3<strong>Priority</strong>: This shows the Project priorities of the below status types.
+
+2.3.1 All
+
+2.3.2 High
+
+2.3.3 Urgent
+
+2.3.4Medium
+
+2.3.5 Low
+
+2.4<a href="#currencies"><strong>Currency</strong></a>: Filters based on Currency.
+
+2.4.1 USD
+
+2.4.2 INR
+
+2.5 <strong>Status: </strong>Project status are created in the <strong>Project status</strong> module and these will be reflected on the project creation page.
+
+2.5.1 Started
+
+2.5.2 Not Started
+
+2.5.3 On Hold
+
+2.5.4 Overdue
+
+2.5.5 In Progress
+
+<br><br><img class="aligncenter size-full wp-image-2379" src="assets/images/2019/07/PF.png" alt="" width="1100" height="426" />
+<h3><strong>Projects List page:</strong></h3>
+<div id="projects-list" class="section">
+
+On the projects list page youll see a table with the columns below;
+<ul class="simple">
+ 	<li><strong>Title</strong>: Project title/name</li>
+ 	<li><strong>Client</strong>: The name of the client</li>
+ 	<li><strong>Assigned To</strong>: Team members attached to the project</li>
+ 	<li><strong>Start date</strong>: Date of the Project created.</li>
+ 	<li><strong>Due Date</strong>: The date the Project is due.</li>
+ 	<li><strong>Status</strong>: Project Status</li>
+</ul>
+</div>
+<div id="create-project" class="section">
+<h3>Create a New Project:</h3>
+To create a new project, go to the <strong>Projects</strong> --&gt;<strong>Client Projects</strong>--&gt;<strong>Add new</strong> project.
+
+The form contains:
+<ul class="simple">
+ 	<li><strong>Title</strong>: Project title/name</li>
+ 	<li><strong>Client</strong>: Select the relevant client from the client list.</li>
+ 	<li><strong>Priority</strong>: Project Priority.</li>
+ 	<li><strong>Billing type</strong>: There are three billing types and each one is explained <a href="#projects#billing-methods">below</a>;
+<ul class="simple">
+ 	<li><strong>Task Hours</strong></li>
+ 	<li><strong>Project Hours</strong></li>
+ 	<li><strong>Fixed Price</strong></li>
+</ul>
+</li>
+ 	<li><strong>Estimated Hours</strong>: Approximate estimation on how time the project needs to be completed.</li>
+ 	<li><strong>Phase</strong>: This allows the admin to divide a huge project into parts.</li>
+ 	<li><strong>Progress from tasks</strong>: Select Yes/No for progress.</li>
+ 	<li><strong>Start Date</strong>: The date when the project is created or the date when the project needs to be started.</li>
+ 	<li><strong>Due Date</strong>: Final date of the projected to be submitted or completed.</li>
+ 	<li><strong>Status</strong>: State of the project that is started /on hold/overdue/not started/in progress.</li>
+ 	<li><strong>Demo URL</strong>: Giving a URL that gives a rough idea of how the project outcome should be or how the project should be done.</li>
+ 	<li><strong>Assigned To</strong>: Assigning more than one member to the project creating a team to work on the project.</li>
+ 	<li><strong>Visible Tabs</strong>: The Tabs that are visible to the client are not.</li>
+ 	<li><strong>Description</strong>: Summary/Long description of the project.</li>
+</ul>
+<div class="admonition tip">
+
+The <strong>+</strong> icon symbol beside some fields allows you to directly add the particulars through a Pop-up menu to their respective modules to add directly from here to those respective modules.
+
+</div>
+<div id="billing-methods" class="section">
+<h3>Billing Types:</h3>
+<div id="hourly-staff-rate" class="section"><strong>Task Hours</strong>:</div>
+<div id="hourly-task-rate" class="section">
+
+Your Client will be billed based on the Tasks that are assigned to the Project. It doesnt matter who tracked the time, only the<strong>Task Rate</strong>is being taken into consideration. This method is really useful if you charge different rates for different Tasks regardless of who did the work.
+
+</div>
+<div id="hourly-project-rate" class="section">
+
+<strong>Project Hours</strong>:
+
+It doesnt matter who tracked the time, or which Task was chosen, your Client will always be billed at one consistent rate for that Project.
+
+</div>
+<div id="fixed-project-amount" class="section">
+
+<strong>Fixed Price</strong>:
+
+It doesnt matter how many hours were logged, the Project will always be billed at the Fixed Project Amount. You set the Fixed Project Amount from the Edit Project screen.
+<h3><strong>Project Overview:</strong></h3>
+In this page, we can monitor and manage all the project details, task status and its progress, task total hours and expenses details.
+
+<br><br><img class="aligncenter size-full wp-image-1602" src="assets/images/2019/07/project_view_admin_panel.png" alt="" width="1100" height="569" />
+<h3><strong>Tasks:</strong></h3>
+All the tasks related to the project are listed here with a few details of the tasks. The complete details of the tasks such as status, start date, end date, and other details can be viewed by clicking on the<strong> View</strong> button.
+
+After the Task is created, a link to Start timer given, to start the Task. Once the Start timer link is accessed, task time gets started and it is reflected in the Time Entries tab. Once the task is done or terminated there is an option to stop the timer for that particular task only.
+<h3><strong>Time Entries</strong>:</h3>
+Manual entry:
+
+</div>
+</div>
+</div>
+<div id="time-entries" class="section">
+<div id="manual-entry" class="section">
+<blockquote>
+<div>
+<ul class="simple">
+ 	<li>To enter time manually click on<strong>Time Entry</strong>button.</li>
+ 	<li>Select a task from the drop down list.</li>
+ 	<li>Enter start and end time of the task.</li>
+ 	<li>Select a person to whom the task is to be assigned.</li>
+ 	<li>Enter time entry description.</li>
+</ul>
+</div></blockquote>
+Click<strong>Save</strong> when completed.
+<h3><strong>Milestones</strong>:</h3>
+Milestones are a sequence of events that finally end in completion of the project. Milestones are tasks with Zero time duration. Milestones are created to manage and monitor the progress of a project.
+<h3><strong>Files</strong>:</h3>
+Files like Documents, Images, PDF's, Excel, etc regarding the project are attached here.
+<h3><strong>Discussions</strong>:</h3>
+A platform is provided to have a Discussion between Clients, Team Members who are assigned to a particular project regarding the progress, issues, and needs of the project.
+<h3><strong>Tickets</strong>:</h3>
+These are raised by Clients/Assigned members to solve the issue. They are placed in the respective categories and closed based on the priority of the ticket.
+<h3><strong>Sales:</strong></h3>
+<strong>1. Invoices:</strong>
+
+All the invoices of the project are displayed automatically in this tab.
+
+<strong>2.Invoice Project:</strong>
+
+</div>
+</div>
+<div id="invoice-project" class="section">
+
+In Laraoffice CRM, all the team can track their time entries for the Projects they are assigned to. These Projects are assigned to individual employees, and you can Invoice your Clients easily based on that tracked time by generating an Invoice with time entries on it based on billing type.
+<dl class="docutils">
+ 	<dt>To generate an invoice.</dt>
+ 	<dt></dt>
+ 	<dd>
+<ul class="first last simple">
+ 	<li>Click on <strong>Sales.</strong></li>
+ 	<li>Click<strong>Invoice Project</strong>to start invoicing your project.</li>
+ 	<li>Select <strong>Invoice data type</strong>.</li>
+ 	<li>All the billed tasks will be marked as finished.</li>
+ 	<li>If there are unbilled expenses, they will be listed to add/selection to invoice project.</li>
+</ul>
+</dd>
+</dl>
+Click<strong>Save</strong> to generate invoice project. These <strong>Invoice Projects</strong> are also shown in <strong>Invoices Module</strong>.
+
+A project can be invoiced in three forms
+
+<strong>Single line invoicing</strong>: In this format, only the project name and total amount for the project is taken into consideration. It contains Project name, All tasks + total logged time per task. This cannot be applied if the project Billing Type is Task Hours.
+
+<strong>Task per hour invoicing</strong>: All billable tasks per item are taken into consideration. This invoice contains
+
+Project name + Task name along with Total logged time. This format is not applied if the Billing type is Fixed Cost.
+
+<strong>All timesheets individually invoicing</strong>: In this type invoicing every event of the project are considered to be billed. Project name + Task name and Timesheet start time + end time + total logged time. This format is not applied if Billing type is Fixed Cost
+
+<strong>3.Invoice Expenses</strong>:
+
+Are you billing a client directly for an expense? To bill an expense, then click on Add new and create an expense invoice for the client by selecting whether it is recurring or not including with all the respective project details.
+<h3><strong>Notes:</strong></h3>
+Notes related to the Project such as priority requirements, number of tasks are entered here.
+<h3><strong>Duplicate Project:</strong></h3>
+</div>
+<div id="duplicate-project" class="section">
+
+To duplicate a project, click on the <strong>Duplicatebutton</strong> and a new project will be generated similar to the original project named <strong>Project name (Copied)</strong>.
+
+</div>		</section>
+ 		 		<section id="client-projects">
+			<div class="page-header"><h3>Employee</h3><hr class="notop"></div>
+			<span style="font-weight: 400;">A person who is hired by an organization in order to fulfill the requirements of an organization for wages. An employee might work for the organization either part-time or full-time under a contract of employment, whether oral or written, express or implied, and has recognized rights and duties. LaraOffice provides an employee all rights, manages his wages and work, and maintains transparency between the employee and employer.</span>
+
+Unlike project manager, employees can only have access to view action in projects module.
+
+Refer the link below to know more about the view action in <a href="#projects"><strong>Project</strong></a> module for employee.		</section>
+ 		<h1 id="accounting">Accounting</h1> 		<section id="incomes">
+			<div class="page-header"><h3>Incomes</h3><hr class="notop"></div>
+			Income is the consumption and savings opportunity gained by an entity within a specified time frame, which is generally expressed in monetary terms.
+
+Here, Income is adding from various modules in the system like Invoices, Orders, Recurring Invoices, Quotes ( after converting to Invoice), Proposal ( after converting to Invoice).
+<h3><strong>Income Categories</strong>:</h3>
+The categories which are related to Income shows from which module it is coming and from which category it takes place. We can create various categories for Income. These will be reflected at the payment page.
+<h3><strong>Income List</strong>:</h3>
+The Income list page shows as,
+
+<strong>Account</strong>: Income is added to in which account.
+
+<strong>Income</strong> <strong>Category</strong>: Income takes place from which category.
+
+<strong>Entry Date</strong>: Income date.
+
+<strong>Amount</strong>: Income amount.
+
+<strong>Payer</strong>: Who made the payment.
+
+<strong>Payment Method</strong>: Payment done through which gateway.
+
+<br><br><img class="aligncenter wp-image-1546 size-full" src="assets/images/2019/07/income-e1570170816919.png" alt="" width="1100" height="542" />
+
+By clicking on <strong>View</strong>, we can monitor the selected Income details.
+
+<strong>Create Income</strong>:
+
+We can create the Income on here itself also by clicking on Add new button.		</section>
+ 		 		<section id="expenses">
+			<div class="page-header"><h3>Expenses</h3><hr class="notop"></div>
+			Expense is an outflow of money to another person or group to pay for an item or service, or for a category of costs.
+<h3><strong>Expense Categories</strong>:</h3>
+The categories which are related to Expense to which contact it is transacting from at which category. We can create various categories for Expense. These will be reflected at payment page.
+<h3><strong>Expense List</strong>:</h3>
+The Expense list page is shown as,
+
+<strong>Name</strong>: Expense name.
+
+<strong>Account</strong>: Expense is added to in which account.
+
+<strong>Expense Category</strong>: Expense's category.
+
+<strong>Entry Date</strong>: Expense date.
+
+<strong>Amount</strong>: Expense amount.
+
+<strong>Payee</strong>: For whom to make the payment.
+
+<strong>Payment Method</strong>: Payment done through which gateway.
+
+By clicking on<strong>View</strong>, we can monitor the selected Expense details.
+
+<br><br><img class="aligncenter size-full wp-image-1542" src="assets/images/2019/07/expenses.png" alt="" width="1100" height="572" />
+<h3><strong>Create Expense</strong>:</h3>
+We can create the Expense by here itself also, we have the option to make the recurring expense.
+
+In the Expense Creation page as like as shown in the Expense list page, but some fields are included in the creation page.
+
+Here we go for remaining fields in Creation page.
+
+<strong>Billable</strong>: Select Yes/No to make the expense which it is billing or not.
+
+<a href="#currencies"><strong>Currency</strong></a>: Expense currency. If you select the Payee, then payees default currency is auto-generated, the selected payees currency will be used. Otherwise, we can change the currency as we need.
+
+<strong>Project</strong>: Project title/name.
+
+<strong>Recurring Period</strong>  It shows that selection of duration like Days/Weeks/Months to recur the expense.
+
+<strong>Recurring Value</strong> Value of Recurring period.
+
+Example: Consider recurring period is<strong>weekly,</strong>then the value is taken<strong>2</strong>, it shows the total recurring period is<b>2 weeks.</b>
+
+<strong>Recurring Type</strong> It is based on Recurring Period. It is selected automatically by selecting Recurring Period.
+
+<strong>Total Cycles</strong>  How many times the expense will be recurred to the particular payee from giving on respective dates.
+
+<strong>Description</strong>: Summary of the expense.
+<div class="admonition tip">
+
+<strong>Reference</strong>: Reference number of expense.
+
+<strong>Description File:</strong>Document, PDF etc. about on expense.
+
+<br><br><img class="aligncenter size-full wp-image-1544" src="assets/images/2019/07/expenses_create.png" alt="" width="1100" height="574" />
+
+The <strong>+</strong> icon symbol beside some fields allows you to directly add the particulars through a Pop-up menu to their respective modules.to add directly from here to those respective modules.
+
+Click on <strong>Save,</strong>Expense is created.
+
+</div>
+This also be placed on <a href="#projects"><strong>Projects</strong></a> module at <strong>Sales</strong> field--&gt;Invoice expenses.		</section>
+ 		 		<section id="monthly-report">
+			<div class="page-header"><h3>Monthly Report</h3><hr class="notop"></div>
+			We can monitor the Monthly Report of both <a href="#incomes">Incomes</a> and <a href="#expenses">Expenses</a>.
+
+By clicking on <strong>Accounting</strong>--&gt;<strong>Monthly Report</strong>, it shows the results.
+
+<br><br><img class="aligncenter wp-image-2088" src="assets/images/2019/07/monthly_report1.png" alt="" width="672" height="307" />
+
+These shows in two different types as follows.
+
+<strong>1. Bar Chart</strong>:
+
+<br><br><img class="aligncenter size-large wp-image-1029" src="assets/images/2019/07/Screenshot-from-2019-07-12-15-32-52-e1562925855350-1024x366.png" alt="" width="700" height="250" />
+
+<strong>2. Pie Chart</strong>:
+
+<br><br><img class="aligncenter size-large wp-image-1030" src="assets/images/2019/07/Screenshot-from-2019-07-12-15-32-56-e1562925882944-1024x612.png" alt="" width="700" height="418" />		</section>
+ 		 		<section id="accounts-transfers">
+			<div class="page-header"><h3>Accounts & Transfers</h3><hr class="notop"></div>
+			<h3><strong>Accounts Overview</strong>:</h3>
+The Bank account is a financial account maintained by a bank for a customer.
+
+<strong>Name</strong>: Account name.
+
+<strong>Initial Balance</strong>: Account balance.
+
+<strong>Account Number</strong>: Bank account number.
+
+<strong>Contact Person</strong>: Account Holder.
+
+<strong>Phone</strong>: Contact number.
+
+Creation/List page are similar, excluding URL and description fields.
+
+<strong>URL</strong>: Bank's URL to redirect to it.
+<h3><strong>Transfers Overview:</strong></h3>
+<br><br><img class="aligncenter size-full wp-image-2085" src="assets/images/2019/07/account_transfer1.png" alt="" width="843" height="342" />
+
+Transferring money from one bank to another bank.
+
+<br><br><img class="aligncenter size-full wp-image-2400" src="assets/images/2019/07/at.jpg" alt="" width="1100" height="540" />
+
+Transactions of the amounts shows in the Transfer list page.
+
+<br><br><img class="aligncenter wp-image-2086" src="assets/images/2019/07/account_transfer2.png" alt="" width="827" height="379" />		</section>
+ 		<h1 id="orders">Cart Orders</h1> 		<section id="orders-summary">
+			<div class="page-header"><h3>Orders Summary</h3><hr class="notop"></div>
+			Cart orders page consists of two features,
+
+1. Summary
+
+2. Filter
+
+These provide a general overview of the Cart orders status for business.
+
+<strong>1.Cart Orders summary</strong>:
+
+The cart orders summary is of two types,
+
+1.1 Progress
+
+1.2 Circle
+
+The above types provide the information below:
+
+<strong>Total orders Amount</strong>: Total amount of Cart orders.
+
+<strong>Active Orders:</strong> The Paid amount of orders.
+
+<strong>Pending Orders: </strong>Unpaid amount of orders.
+
+<strong>Cancelled Orders: </strong>The cancelled orders in Cart.
+
+By clicking on<strong>Active orders</strong>, all the active orders are filtered. Similarly for remaining pending, cancelled orders respectively.
+
+<strong>   1</strong>.<strong>1 Progress</strong>type summary:
+
+These can again be filtered based on<a href="#currencies">currency</a> ( like USD, INR, Dinar etc). This allows fetching of all the orders either Active or pending with that particular <a href="#currencies">currency</a>.
+
+<br><br><img class="aligncenter size-full wp-image-1604" src="assets/images/2019/07/cart_orders_summary_progress.png" alt="" width="1100" height="513" />
+
+<strong>1.2 Circle</strong>type summary:
+
+This summary gives the data in percentage ( Cart order ) and amount of all the orders.
+
+<br><br><img class="aligncenter size-full wp-image-1605" src="assets/images/2019/07/cart_orders_summary_circle.png" alt="" width="1100" height="564" />
+
+<strong>2. Cart Orders Filter</strong>:
+
+Orders filter allows us to filter the Cart orders by entering the required type in the fields.
+
+These fields are,
+
+2.1<strong> Customer</strong>: Allows to filter based on the Customer name.
+
+2.2 <strong>Order Status</strong>: This shows the orders of the below status types.
+
+2.2.1 All
+
+2.2.2 Pending
+
+2.2.3 Active
+
+2.2.4 Cancelled
+
+2.2.5 Return
+
+2.3 <a href="#currencies"><strong>Currency</strong></a>: Filters based on Currency.
+
+2.3.1 USD
+
+2.3.2 INR
+
+<br><br><img class="aligncenter size-full wp-image-1606" src="assets/images/2019/07/cart_orders_custom_filter.png" alt="" width="1100" height="348" />		</section>
+ 		 		<section id="orders">
+			<div class="page-header"><h3>Add Orders</h3><hr class="notop"></div>
+			To Add new order go to <strong>Cart Orders --&gt; List Orders</strong>and click on the button<strong>Add new</strong> order.
+
+Alternatively, Click On <strong>Cart Orders --&gt;Place New Order</strong>.
+
+The Order Creation page contains the following attributes:
+
+<strong>Customer</strong>: The name of the Customer which is selected from the drop-down list.
+
+<strong>Order Status</strong>: The Status of invoice whether it is Pending/Active or not. If it is pending, we can make the payment for the order.
+
+<strong>Billing Cycle</strong>: Like an EMI (Is it weekly, monthly, etc.)
+
+<strong>Recurring Value:</strong>The Value of Recurring period for the payment.
+
+Example:
+
+Consider the recurring period is <strong>weekly,</strong>then the value is taken<strong>2</strong>, it shows the total recurring period is<b>2 weeks.</b>
+
+<strong>Recurring Type:</strong> It is based on the Recurring Period of time which is selected automatically by selecting the Recurring Period.
+
+<strong>Total Cycles: </strong>It shows how many times the order will be recurred to the particular customer from giving on respective dates.
+
+Example :
+
+The order due date is 02/03/2019, Recurring Period is Weekly, Value is 2, Total Cycles is 2.Thus, it will have Recurred on 09/03/2019 and 16/03/2019.
+<ul>
+ 	<li><strong>Item/Product</strong>: This is the name of the item you are billing for. You can either enter the details manually or start typing and pick the items.</li>
+</ul>
+<ul class="simple">
+ 	<li><strong>Quantity</strong>: The number of units being charged.</li>
+ 	<li><strong>Unit Price</strong>: The amount you charge per unit of items.</li>
+ 	<li><strong>Tax Rate</strong>: To apply tax to the item, click on the Tax field and select the relevant tax from the drop-down list.</li>
+ 	<li><strong>Discount</strong>: This is the discount percentage/value you need to apply for the particular item.</li>
+ 	<li><strong>Description</strong>: Add more information about the item. This will help the customer better understand the job completed and is also useful for your own reference</li>
+</ul>
+<strong>Generate Invoice</strong>: For all orders, LaraOffice can provide an invoice that will be created at the Invoice module by selecting <strong>YES/NO.</strong>
+
+<strong>Send Email/SMS</strong>: The communication gateways to send Email/SMS to Customer.
+
+<br><br><img class="aligncenter size-full wp-image-1553" src="assets/images/2019/07/cartorders_create.png" alt="" width="1100" height="581" />
+
+<br><br><img class="aligncenter size-full wp-image-1554" src="assets/images/2019/07/cartorders_create1.png" alt="" width="1100" height="330" />
+
+<strong>Add Payment to Incomes: </strong>It enables the Order amount should be added to the Incomes module by selecting <strong>YES/NO</strong>.
+
+The + icon symbol beside some fields allows you to directly add the particulars through a Pop-up menu to their respective modules.to add directly from here to those respective modules.		</section>
+ 		 		<section id="view-orders">
+			<div class="page-header"><h3>View Orders</h3><hr class="notop"></div>
+			Go to <strong>Cart Orders</strong>--&gt;Click on <strong>View</strong> <strong>Order</strong>, then it shows the order details.
+
+The following are the attributes of the cart order:
+
+<strong>ID</strong>: The unique number which referred to cart order.
+
+<strong>Date</strong>: The Date of the order on which it was booked.
+
+<strong>Customer</strong>: The name of the Customer.
+
+<strong>Price</strong>: The total amount of the order.
+
+<strong>Billing</strong> <strong>Cycle</strong>: The payment cycle which is instant or recursive or likely to EMI
+<ul>
+ 	<li><strong>Item/Product</strong>: The product name can be either manually typed or picked from the listed options.</li>
+</ul>
+<ul class="simple">
+ 	<li><strong>Quantity</strong>: The number of units being charged.</li>
+ 	<li><b>Rate: </b>The amount you charge per unit of the items/products.</li>
+ 	<li><strong>Tax Rate</strong>: It can be applied to the item/product by selecting the relevant tax from the drop-down list.</li>
+ 	<li><strong>Discount</strong>: It can be applied to any particular item either as a percentage or a fixed value.</li>
+</ul>
+<br><br><img class="aligncenter  wp-image-2095" src="assets/images/2019/07/cart_orders1.png" alt="" width="827" height="385" />
+
+Here, The LaraOffice featured to monitor the complete order details and observe that amount details whether it is paid or unpaid through the payment gateways category.
+
+If it is <strong>paid</strong>, then it shows the Status to be marked as <strong>Success</strong>.
+
+Otherwise, it shows to <strong>Make Payment</strong>.		</section>
+ 		<h1 id="global-settings">Global Settings</h1> 		<section id="dynamic-options">
+			<div class="page-header"><h3>Dynamic Options</h3><hr class="notop"></div>
+			These are reflected in <a href="#invoice-actions"><strong>Invoices</strong></a>, <strong><a href="#quote-actions">Quotes</a>, <a href="#sales-proposals-2">Proposals</a>, <a href="#contracts">Contracts</a></strong> and <a href="#projects"><strong>Project Tasks</strong></a> modules ( on MORE field in action buttons ) to know the status of them. These are of two types.
+<ul>
+ 	<li><strong>Priorities</strong></li>
+ 	<li><strong>Task</strong> <strong>Status</strong></li>
+</ul>
+<br><br><img class="aligncenter size-full wp-image-2419" src="assets/images/2019/07/do.png" alt="" width="1100" height="589" />
+
+Add a new category by filling the required fields.
+
+<strong>Title</strong>: Enter the name of the dynamic option.
+
+<strong>Module:</strong>Select the module in which the option is related to it<strong>.</strong>
+
+<strong>Type</strong>: Select the type in which the option is related to the particular selected option.
+
+<strong>Color</strong>: Select the color to reflect on the title name with module and priority selected fields.
+
+<strong>Description</strong>: Brief description of the option.
+
+<br><br><img class="aligncenter size-full wp-image-2420" src="assets/images/2019/07/Do2.png" alt="" width="1100" height="547" />
+
+By clicking on <strong>View</strong>, we will find the Dynamic option's related details.
+
+Example: Creating with High Priority and selecting the Module Invoice.
+
+<strong>Dynamic Options List page:</strong>
+
+<br><br><img class="aligncenter wp-image-1755" src="assets/images/2019/07/dynamic_options.png" alt="" width="840" height="384" />
+
+The List page shows with Title and Module name.
+
+<strong>Title</strong>: Status name.
+
+<strong>Module</strong>: Module with a type.
+
+These can manage to View/Edit the option by clicking on Action buttons.		</section>
+ 		 		<section id="currencies">
+			<div class="page-header"><h3>Currencies</h3><hr class="notop"></div>
+			We have multiple currencies that will be reflected based on the User's currency and it converts any type of currency into Base Currency based on the conversion.
+
+<strong>Currency List page</strong>:
+
+<br><br><img class="aligncenter  wp-image-1753" src="assets/images/2019/07/currency.png" alt="" width="882" height="414" />
+
+<strong>Name</strong>: Currency name.
+
+<strong>Symbol</strong>: Currency symbol.
+
+<strong>Code</strong>: Currency code.
+
+<strong>Rate</strong>: Currency rate based on Base currency.
+
+<strong>Example</strong>: Base Currency is USD, the for INR --&gt; <strong>1 USD</strong> = <strong>70 INR</strong> (Approx. because daily the currency rate is updating )
+
+<strong>Status</strong>: Status of Currency, if it is Active then the currency is shown in the system.
+
+<strong>Is Default</strong>: By selecting YES, then selected currency is Base Currency.
+
+<strong>Create New Currency</strong>:
+
+Go to <strong>Global Settings</strong> --&gt; <strong>Currencies</strong>, Click on <strong>Add new</strong> then create the new currency based on your requirement. Make sure you add the valid currency<a href="https://en.wikipedia.org/wiki/List_of_circulating_currencies">ISO code</a>. The currency<a href="https://en.wikipedia.org/wiki/List_of_circulating_currencies">ISO code</a>will be used when sending the currency code to online payment gateways.
+
+If this is your <strong>base currency</strong> you will need to select it as<strong> Default </strong>with a status of<strong> Active</strong>.
+
+Changing the base/customer currency after recording the transactions is not possible.
+
+<strong>Make Transactions other than Base currency</strong>:
+
+There is only one option where the currency is change and it is possible when creating new Invoice, Quotes, Recurring Invoices, Proposals, Contracts, Credit notes, Cart orders and Purchase Orders.
+
+And also, If you need to make the transaction with a different currency for the different customer you need to set the <strong>customer currency</strong> in the <strong><a href="#contacts">Contacts</a> </strong>creation page.
+
+Example: Creating new invoice and select the customer, the currency will be auto changed based on the currency you have given for this customer.
+
+<article id="post-217" class="clearfix post-217 post type-post status-publish format-standard hentry category-setup-and-configuration category-general category-sales">
+<div class="entry-content">
+
+For all future transactions for Contacts, the currency of the contact will be auto-selected.
+
+</div>
+</article>We have a field with <strong>Update Currency Exchange Field</strong>, if it is <strong>Yes</strong> then it can be updated.
+
+Finally, we can <strong>Update all the Currencies at any time</strong> based on the Currency rate is going on through the<strong>API key</strong>.
+
+<strong>Note</strong>:
+
+If the customer has already recorded transactions then you cant be able to change the currency. In that case you should delete all previous transactions to change the currency, once the transaction is recorded ability to change the customer currency will be disabled.		</section>
+ 		 		<section id="templates">
+			<div class="page-header"><h3>Email Templates</h3><hr class="notop"></div>
+			Email Templates are used to send the Email to the User for the confirmation of their Action made on modules like Invoice details, Payment details, etc ( Templates ).
+
+<strong>Templates List page</strong>:
+
+<br><br><img class="aligncenter wp-image-1047" src="assets/images/2019/07/Screenshot-from-2019-07-13-10-31-16-e1562994134314-1024x502.png" alt="" width="826" height="405" />
+
+<strong>Key</strong>: Theme Key of the template.
+
+<strong>Type</strong>: Type of template like Content, Header, Footer.
+
+<strong>Subject</strong>: Subject of the template.
+
+<strong>From Email</strong>: Sending Email from.
+
+<strong>From Name</strong>: Sending Email Company/System name.
+
+<strong>Creation of Email Template:</strong>
+
+All the fields are Mandatory to create the New template.
+
+<br><br><img class="aligncenter wp-image-1048 size-large" src="assets/images/2019/07/Screenshot-from-2019-07-13-10-37-01-e1562994464579-1024x509.png" alt="" width="1024" height="509" />
+
+<strong>Template View</strong>:
+
+<br><br><img class="aligncenter wp-image-1750" src="assets/images/2019/07/templates_global_setting.png" alt="" width="835" height="391" />
+
+These templates are reflected in the module's actions field to send the respective email to the Users.		</section>
+ 		 		<section id="sms-templates">
+			<div class="page-header"><h3>SMS Templates</h3><hr class="notop"></div>
+			SMS Templates are used to send the SMS to the User for the confirmation of their Action made on modules like Invoice details, Payment details, etc ( Templates ).
+
+<strong>SMS Templates List page</strong>:
+
+<br><br><img class="aligncenter  wp-image-1748" src="assets/images/2019/07/sms_template_index.png" alt="" width="855" height="396" />
+
+<strong>Title</strong>: Subject name/title.
+
+<strong>Key</strong>: Theme Key of the template.
+
+<strong>Content</strong>: Content of the template.
+
+<strong>Creation of SMS Template:</strong>
+
+All the fields are Mandatory for to create the New template.
+
+<br><br><img class="aligncenter  wp-image-1745" src="assets/images/2019/07/sms_template_view.png" alt="" width="874" height="401" />
+
+<strong>SMS Template View</strong>:
+
+<br><br><img class="aligncenter  wp-image-1747" src="assets/images/2019/07/sms_template_create.png" alt="" width="844" height="384" />
+
+These templates are reflected in the module's actions field to send the respective SMS to the Users.		</section>
+ 		 		<section id="payment-gateways">
+			<div class="page-header"><h3>Payment gateways</h3><hr class="notop"></div>
+			You can view payment configuration in your LaraOffice CRM by going to <strong>Global</strong> <strong>Settings</strong> --&gt; <strong>Payment Gateways.</strong>
+
+Here we providing three payment gateways which are static.
+<ul>
+ 	<li><strong>PayU</strong></li>
+ 	<li><strong>Paypal</strong></li>
+ 	<li><strong>Stripe</strong></li>
+</ul>
+<strong>View page</strong>:
+
+<strong>Name: </strong>Name of your payment gateways like PayU, Paypal, Stripe.
+
+<strong>Description: </strong>Description of your payment gateway.
+
+<strong>Logo:</strong> You can set your payment gateway logo.
+
+By clicking on view, we can monitor the respective Payment gateway <strong>Transferring history</strong> on various modules like <a href="#accounts-transfers">Transfers</a>, <a href="#incomes">Incomes</a> and <a href="#expenses">Expenses</a>.
+
+<br><br><img class="aligncenter size-full wp-image-2566" src="assets/images/2019/07/payment_gateways.png" alt="" width="1100" height="576" />		</section>
+ 		 		<section id="taxes">
+			<div class="page-header"><h3>Taxes</h3><hr class="notop"></div>
+			These Taxes will be reflected at <strong>Sales module</strong> while purchasing a product, making an invoice etc.
+
+Go to<strong> Global Settings&gt;</strong><strong>Taxes</strong><strong>&gt; Add New</strong>
+
+<br><br><img class="aligncenter size-full wp-image-2432" src="assets/images/2019/07/tax.png" alt="" width="1100" height="663" />
+
+Create a New Tax in this page where the fields to be filled are:
+
+<strong>Name</strong>: Name of the Tax.
+
+<strong>Rate</strong>: Tax rate value.
+
+<strong>Rate Type</strong>: Rate type like Percentage/Value.
+
+<strong>Description</strong>: Brief description on tax.
+
+<strong><br><br><img class="aligncenter size-full wp-image-2433" src="assets/images/2019/07/tax2.png" alt="" width="1100" height="658" /></strong>
+
+<strong>View</strong> button allows to see all the tax details.
+
+<br><br><img class="aligncenter  wp-image-1735" src="assets/images/2019/07/taxes_view.png" alt="" width="772" height="354" />
+
+By clicking on view, we can monitor the respective <strong>Tax detailedhistory</strong> on various modules like Invoices, Quotes, Recurring Invoices and Purchase Orders.		</section>
+ 		 		<section id="discounts">
+			<div class="page-header"><h3>Discounts</h3><hr class="notop"></div>
+			These Discounts will be reflected at <strong>Sales module</strong> while purchasing a product, making an invoice etc.
+
+Go to<strong> Global Settings&gt;</strong> <strong>Discounts</strong><strong>&gt; Add New</strong>
+
+<strong>Discounts List page:</strong>
+
+<br><br><img class="aligncenter size-full wp-image-2435" src="assets/images/2019/07/discount-1.png" alt="" width="1100" height="667" />
+
+Create a New Discount in this page where the fields to be filled are:
+
+<strong>Name</strong>: Name of the Discount.
+
+<strong>Rate</strong>: Discount rate value.
+
+<strong>Rate Type</strong>: Rate type like Percentage/Value.
+
+<strong>Description</strong>: Brief description on Discount.
+
+<strong><br><br><img class="aligncenter size-full wp-image-2436" src="assets/images/2019/07/discount-2.png" alt="" width="1100" height="669" /></strong>
+
+<strong>View</strong> button allows to see all the Discount details.
+
+<br><br><img class="aligncenter wp-image-1739" src="assets/images/2019/07/discount_view.png" alt="" width="807" height="372" />
+
+By clicking on view, we can monitor the respective <strong>Discount detailed history</strong> on various modules like Invoices, Quotes, Recurring Invoices and Purchase Orders.		</section>
+ 		 		<section id="translations">
+			<div class="page-header"><h3>Translations</h3><hr class="notop"></div>
+			We can translate the default language into various languages which we want to use the system in particular language by using the <strong>API</strong> <strong>key</strong> in <strong><a href="#translations-2">Translations Settings</a>.</strong>
+
+<br><br><img class="aligncenter size-full wp-image-2563" src="assets/images/2019/07/translations-1.png" alt="" width="1100" height="588" />We can manage the Importing and Exporting the languages by using these translations. We can translate the default language to any language you required which are only available in <a href="#languages"><strong>Languages</strong></a> module.
+
+For some languages all the key words are not translated, in that case we manually translate the key words to as per our need.		</section>
+ 		 		<section id="languages">
+			<div class="page-header"><h3>Languages</h3><hr class="notop"></div>
+			In this system, we have multiple number of languages. We can manage all the languages in single page.
+
+<strong>LaraOffice</strong> is a <strong>Multi-Language System.</strong>
+
+Go to<strong> Global Settings&gt;</strong> <strong>Languages &gt; Add New</strong>
+
+<strong>Languages List page</strong>:
+
+<strong><br><br><img class="aligncenter wp-image-2440 size-full" src="assets/images/2019/07/languages-1-e1570256305948.png" alt="" width="1100" height="607" /></strong>
+
+Create a New Language in this page where the fields to be filled are:
+
+<strong>Language</strong>: Name of the Language.
+
+<strong>Code</strong>: Code of the Language.
+
+<strong>Is RTL</strong>: Manage them by clicking on RTL/LTR ( Right to Left or vice-versa ) button.
+
+<br><br><img class="aligncenter size-full wp-image-2442" src="assets/images/2019/07/languages-2.png" alt="" width="1100" height="624" />
+
+<strong>View</strong> button allows to see all the Language details.
+
+<br><br><img class="aligncenter size-full wp-image-2443" src="assets/images/2019/07/languages3.png" alt="" width="1100" height="630" />
+
+On clicking view, we can monitor the respective <strong>Language detailed history</strong> on module <strong><a href="#contacts">Contacts</a></strong>.
+
+By clicking on <strong>Make Default</strong> on selected language, then the system changes to particular selected language.		</section>
+ 		 		<section id="database-files-backups">
+			<div class="page-header"><h3>Database & Files Backups</h3><hr class="notop"></div>
+			We can manage the database by going to <strong>Global Settings</strong> --&gt; <strong>Database Backup</strong>.
+
+To take backup, click on <strong>Take Backup</strong> button then backup will be started.
+
+Then backup Database is shown on <strong>Database Backup</strong> field.
+
+Backup Files are shown in <strong>Files Backup</strong> field.
+
+<strong>Database &amp; Files Backups</strong>: Combination of both Database and Files Backups which are shown in this field.
+
+<strong><br><br><img class="aligncenter size-full wp-image-2561" src="assets/images/2019/07/database_backups-1.png" alt="" width="1100" height="580" />Name :</strong>Name of your files/database.
+
+<strong>Storage location :</strong>Location/path of your files/database.
+
+<strong>Size :</strong>Size of your files/database.
+
+<strong>Created :</strong>Created date of your files/database.		</section>
+ 		 		<section id="site-themes">
+			<div class="page-header"><h3>Site Themes</h3><hr class="notop"></div>
+			<strong>Site Themes</strong> are of two types.
+<ul>
+ 	<li><strong>Default</strong></li>
+ 	<li><strong>BSB</strong></li>
+</ul>
+<strong>Site Themes List page</strong>:
+
+The following image shows the <strong>Default</strong> type of the system.
+
+<strong>Title :</strong>Name/title of your site theme.
+
+<strong>Theme title key :</strong> You can give name of your site theme.
+
+<strong>Is active :</strong>If yes, the site theme will be set as your default theme to your site.
+
+<strong>Settings :</strong> You can manage the Theme colours.
+
+<br><br><img class="aligncenter size-full wp-image-2558" src="assets/images/2019/07/site_theme_settings.png" alt="" width="1100" height="567" />This image is shown for <strong>BSB</strong> type of the system.
+
+<strong>Title :</strong>Name/title of your site theme.
+
+<strong>Theme title key :</strong> You can give name of your site theme.
+
+<strong>Is active :</strong>If yes, the site theme will be set as your default theme to your site.
+
+<strong>Settings :</strong> You can manage the Theme colours.
+
+<strong>User Profile Placement</strong>: The Admin profile will be shown on Topbar/Sidebar of which we have selected.
+
+<br><br><img class="aligncenter size-full wp-image-2559" src="assets/images/2019/07/bsb_theme.png" alt="" width="1100" height="589" />We can manage the Theme colours for both Default and BSB Themes by clicking on <strong>Settings --&gt;</strong><strong>Site Themes page</strong>.
+
+The Admin can have access to manage all the Users themes.		</section>
+ 		 		<section id="master-settings">
+			<div class="page-header"><h3>Master Settings</h3><hr class="notop"></div>
+			The master settings module plays a very crucial role in the functioning and working of the whole system. The complete system runs on the information provided in the master settings module. All the outputs in the system for every module are managed only through master settings. In other words, master settings is the most essential part of the system that controls all the actions of the users.
+<h3><strong>Master Settings List page</strong>:</h3>
+This page displays all the modules present in the system as a table with the below tabular columns,
+
+<strong>Module</strong>: Name of the module.
+
+<strong>Key</strong>: Module key.
+
+<strong>Module type</strong>: Type of module whether it is General, Payment, SMS gateways.
+
+<strong>Description:</strong> Data that gives brief details about the module and its working.
+
+<strong>Action: </strong>Allows performing particular actions on the respective modules.
+
+<br><br><img class="aligncenter size-full wp-image-2556" src="assets/images/2019/07/master_settings_list_page.png" alt="" width="1100" height="583" />		</section>
+ 		 		<section id="mailchimp-settings">
+			<div class="page-header"><h3>Mailchimp Settings</h3><hr class="notop"></div>
+			<h3><label for="enable_mailchimp">MailChimp<strong>Settings</strong>:</label></h3>
+In order to send the bulk of emails to contacts, the MailChimp provides a platform to run campaigns by customizing its settings.
+
+<strong>Enable MailChimp</strong>: By select <strong>Yes</strong>, it will enable.
+
+<strong>MailChimp API key</strong>: This is a Unique key to maintain the Mailchimp activity.
+
+By selecting these fields in the below screenshot, addition of contacts of respective contact types makes to run directly in the Mailchimp campaign.
+
+<br><br><img class="aligncenter size-full wp-image-1802" src="assets/images/2019/07/milchimp_settings.png" alt="" width="789" height="375" />		</section>
+ 		 		<section id="purchase-order-settings">
+			<div class="page-header"><h3>Purchase Order Settings</h3><hr class="notop"></div>
+			<h3><strong>Purchase Order Settings</strong>:</h3>
+From here we can manage the Purchase order module by providing various fields details which they will reflect on those module in front end.
+
+<br><br><img class="aligncenter size-full wp-image-1799" src="assets/images/2019/07/purchase_orders_settings.png" alt="" width="700" height="321" />
+
+<strong>Company name</strong>: Company name on Purchased Order.
+
+<strong>Address</strong>: Company address.
+
+<strong> Authorised person</strong>: Person name.
+
+<strong>Person Designation</strong>: Person Designation.
+
+<strong>Signature</strong>: Person signature.
+
+<strong>System Logo</strong>: LaraOffice Logo.
+
+<strong>Enable Signature</strong>: To show signature in Purchase Order or not.
+
+<strong>PO number prefix</strong>: Purchase Order prefix.
+
+<strong>PO start</strong>: Purchase Order starting number.
+
+<strong>Show Quantity as</strong>: Quantity field shows in Purchase Order.
+
+<strong>PO number format</strong>: Purchase Order format.
+
+<strong>PO number separator</strong>: Purchase Order number separator with symbol.
+
+<strong>PO number length</strong>: Max.Length of Purchase Order number.
+
+<strong>Predefined Notes</strong>: This will shows at creation page of Purchase Order.
+
+These settings are same for <strong>Invoice</strong>, <strong>Quotes</strong>, <strong>Credit Notes settings</strong> are same as above mentioned fields but replaces Purchase Order name into those respective module names.		</section>
+ 		 		<section id="login-settings">
+			<div class="page-header"><h3>Login Settings</h3><hr class="notop"></div>
+			<h3><strong>Login Settings</strong>:</h3>
+<span class="GUI_Actions">Login Settings</span> helps to control the login credentials and local account configuration options. Specify user names that should be allowed to authenticate locally when logging in.
+<h3><strong>Login</strong>:</h3>
+A login is a set of credentials used to authenticate a user that consists of a username and password to access account information.
+
+<strong>Carousels</strong>:
+
+These consist of a number of images to display in front end Login page by giving these images in this login settings. Here, we have <strong>Headings</strong> and <strong>Paragraphs</strong> type to provide the information about the project system.
+
+<strong>Login Logo</strong>: By giving a system logo in Login Settings, then it will display in the Front end page.
+
+<strong>Login Logo Enable</strong>: Select <strong>Yes</strong>, it display the logo.
+
+<br><br><img class="aligncenter size-full wp-image-1795" src="assets/images/2019/07/login_settings.png" alt="" width="794" height="375" />		</section>
+ 		 		<section id="quote-cronjob-settings">
+			<div class="page-header"><h3>Quote Cronjob Settings</h3><hr class="notop"></div>
+			These settings will run automatically by giving time duration to perform operations.
+
+<br><br><img class="aligncenter size-full wp-image-1792" src="assets/images/2019/07/quote_cron_job_setting.png" alt="" width="707" height="329" />
+
+<strong>Hour of day to perform automatic operations</strong> : It will perform operations automatically according to hours fixing.
+
+<strong>Auto send reminder after (days)</strong> : If you set days , after that days completed the reminder automatically send to the customer.
+
+<strong>Tasks Reminder Notification Before</strong> : If you set number of days, accordingly tasks reminder notification will be send.
+
+<strong>Enable Task Reminders</strong> : If yes task reminder will be show to opposite person vice-versa.
+
+Task Reminders means Quotes task.
+
+They perform the actions when we enable those fields. Otherwise, it won't perform any action.		</section>
+ 		 		<section id="invoice-cronjob-settings">
+			<div class="page-header"><h3>Invoice Cronjob Settings</h3><hr class="notop"></div>
+			Invoice Cronjob settings will run automatically by giving period of time duration to perform operations.
+
+<br><br><img class="aligncenter size-full wp-image-1788" src="assets/images/2019/07/invoice_cron_job_setting.png" alt="" width="705" height="327" />
+
+<strong>Hour of day to perform automatic operations:</strong> It will perform operations automatically according to hours to be fixed.
+
+<strong>Auto send reminder after (days)</strong>: It will set the number of days after that days completed the reminder automatically send to the customer.
+
+<strong>Auto re-send reminder after (days):</strong> It will set the number of days after that days completed the reminder automatically re-send to the customer.
+
+<strong>Tasks Reminder Notification Before: </strong>It will set the number of days accordingly tasks reminder notification will be sent.
+
+<strong>Enable Task Reminders:</strong>If <strong>yes,</strong> task reminders will be show to the opposite person vice-versa.
+
+These setting featured to create the invoice from recurring invoices when its status is paid. It can generate the new recurring invoice auto-send to the customer.
+
+By making Cronjob settings, we can easily track the Users who are not paid and whom to send auto-reminders to make the payment.		</section>
+ 		 		<section id="quote-settings">
+			<div class="page-header"><h3>Quote Settings</h3><hr class="notop"></div>
+			Some of the fields that are common in both quote order settings and purchase order settings are clearly explained in<strong> Purchase Order Settings</strong>,
+
+Remaining fields that are present in quote settings are explained below,
+
+<br><br><img class="aligncenter size-full wp-image-1786" src="assets/images/2019/07/quote_settings.png" alt="" width="692" height="324" />
+
+<br><br><img class="aligncenter wp-image-1136 " src="assets/images/2019/07/Screenshot-from-2019-07-13-15-30-25-e1563012131318-1024x204.png" alt="" width="705" height="140" />
+
+<strong>Company name on quote: </strong>Name of the company that you desire to be displayed on the receipt.
+
+<strong>Company address:</strong> Address of your company
+
+<strong>Authorized person:</strong>Name of the person who has authority over the company.
+
+<strong>Authorized person Designation:</strong>Designation of your Authorized person.
+
+<strong>Authorized person signature:</strong>Authorized person signature.
+
+<strong>Quote Logo:</strong> Quote logo which is to be displayed on the quote page.
+
+<strong>Show Sale Agent name on Quote or not</strong>: Manage the condition whether to display the sale agent name or not.
+
+<strong>Predefined Client &amp; Admin Notes, Terms &amp; Conditions</strong>: These are predefined text that will be displayed on the quote.		</section>
+ 		 		<section id="translations-2">
+			<div class="page-header"><h3>Translations Settings</h3><hr class="notop"></div>
+			This will reflect on the translations module to translate the language within the system, by any time that we can update the API key of it.
+
+<br><br><img class="aligncenter size-full wp-image-2554" src="assets/images/2019/07/translation_settings.png" alt="" width="1100" height="565" />		</section>
+ 		 		<section id="order-settings">
+			<div class="page-header"><h3>Order Settings</h3><hr class="notop"></div>
+			Cart Order features are managed from this Order Settings.
+
+<br><br><img class="aligncenter size-full wp-image-1782" src="assets/images/2019/07/orders_settings.png" alt="" width="707" height="314" />
+
+<strong>Payment record max.time</strong>: Every order in a cart Will have a max.time limit to make the payment.
+
+<strong>Add Order payments to Income or not</strong>: If Yes, order payment will be added to Incomes.
+
+<strong>Order status for payment success</strong>: Manage order Status of payment success.
+
+<strong>Default account for payments</strong>: Set a default account for payments to select during checkout.		</section>
+ 		 		<section id="receipt-settings">
+			<div class="page-header"><h3>Receipt Settings</h3><hr class="notop"></div>
+			All the changes that are made in this receipt settings module will reflect in <strong>Accounting</strong> --&gt; <strong>Incomes</strong> when we click on Receipt button.
+
+<br><br><img class="aligncenter size-full wp-image-1780" src="assets/images/2019/07/receipt_settings.png" alt="" width="707" height="323" />
+
+<strong>Company Name: </strong>Name of the company that you desire to be displayed on the receipt.
+
+<strong>Address :</strong>Address of your company name.
+
+<strong>Phone :</strong>Company phone number.
+
+<strong>Email :</strong>Company email id.
+
+		</section>
+ 		 		<section id="invoice-settings">
+			<div class="page-header"><h3>Invoice Settings</h3><hr class="notop"></div>
+			In order to have a clear idea about Invoice settings, Go through <a href="#purchase-order-settings"><strong>Purchase Order Settings.</strong></a>
+
+Apart from the fields that are similar to the ones in purchase orders the remaining fields that exist in Invoice settings are discussed below,
+
+<br><br><img class="aligncenter size-full wp-image-1776" src="assets/images/2019/07/invoice_settings.png" alt="" width="703" height="331" />
+
+<br><br><img class="aligncenter size-full wp-image-1777" src="assets/images/2019/07/invoice_settings2.png" alt="" width="702" height="248" />
+
+<strong>Company name on Invoice: </strong>The name of your company which is displayed on your invoice page.
+
+<strong>Company address:</strong> The Address of your company
+
+<strong>Authorized person: </strong>The company Authorized person name.
+
+<strong>Authorized person Designation:</strong> Designation of your Authorized person.
+
+<strong>Authorized person signature:</strong> Authorized person signature.
+
+<strong>Invoice Logo:</strong> Invoice logo which is displayed on the invoice page.
+
+<strong>Add Invoice Payments to Income</strong>: If Yes, then the amount will be added to Incomes.
+
+<strong>Sale Agent</strong>: If Yes, the Sale agent name is shown on Invoice.
+
+<strong>Default Category</strong>: While making a payment, the category should be shown default.
+
+<strong>Default Recurring Invoice Category</strong>: While making a payment, the Recurring Invoice category should be shown default.		</section>
+ 		 		<section id="credit-note-settings">
+			<div class="page-header"><h3>Credit Note Settings</h3><hr class="notop"></div>
+			In order to have a clear idea about Credit note settings, Go through <a href="#purchase-order-settings"><strong>Purchase Order Settings.</strong></a>
+
+Apart from the fields that are similar to the ones in purchase orders the remaining fields that exist in Credit Note settings are discussed below,
+
+<br><br><img class="aligncenter size-large wp-image-1155" src="assets/images/2019/07/Screenshot-from-2019-07-13-16-09-12-e1563014404412-1024x457.png" alt="" width="700" height="312" />
+
+<br><br><img class="aligncenter size-full wp-image-1773" src="assets/images/2019/07/credit_note_setting.png" alt="" width="707" height="258" />
+
+
+
+<strong>Company name on credit note: </strong>Name of your company that is to be displayed on your credit note page.
+
+<strong>Company address :</strong> Address of your company
+
+<strong>Authorized person:</strong> Name of the person who has authority over the company.
+
+<strong>Authorized person Designation :</strong> Designation of your Authorized person.
+
+<strong>Authorized person signature :</strong> Authorized person signature.
+
+<strong>Credit note Logo:</strong> credit note logo which is to be displayed on the credit note page.
+
+<strong>Add to expense credit note</strong>: If Yes, amount is added to the Expense module.		</section>
+ 		 		<section id="sms-settings">
+			<div class="page-header"><h3>SMS Settings</h3><hr class="notop"></div>
+			There are three types of SMS settings gateways which are integrated with LaraOffice that are listed below:
+<ul>
+ 	<li>Twilio</li>
+ 	<li>Nexmo</li>
+ 	<li>Plivo</li>
+</ul>
+These are used to send the SMS to Users by giving respective Keys, Tokens, Authentication ID's, etc.
+
+For <strong>Twilio Settings:</strong>
+
+<br><br><img class="aligncenter size-full wp-image-2549" src="assets/images/2019/07/sms_twilio_settings.png" alt="" width="1100" height="558" />In order to fill the above fields, you need to have a Twilio account. If the account already exists fill the fields with the appropriate details, else create a new account by accessing the link given below: <span style="text-decoration: underline;"><a href="https://www.twilio.com/docs/iam/api/account">https://www.twilio.com/docs/iam/api/accoun</a>t</span>
+
+For <strong>Nexmo Settings:</strong>
+
+<br><br><img class="aligncenter size-full wp-image-2550" src="assets/images/2019/07/sms_nexmo_settings.png" alt="" width="1100" height="558" />Similar to Twilio settings, the Nexmo setting also needs an account to fill the above details. In order to create a new account refer to the link below:
+
+<a href="https://developer.nexmo.com/account/guides/dashboard-management">https://developer.nexmo.com/account/guides/dashboard-management</a>
+
+For <strong>Plivo Settings:</strong>
+
+<br><br><img class="aligncenter size-full wp-image-2551" src="assets/images/2019/07/sms_plivo_settings.png" alt="" width="1100" height="563" />Similar to Twilio settings, the Plivo setting also needs an account to fill the above details. In order to create a new account refer to the link below:
+
+<a href="https://console.plivo.com/accounts/login/">https://console.plivo.com/accounts/login/</a>
+<h3><strong>SMS Settings</strong>:</h3>
+<br><br><img class="aligncenter size-full wp-image-2552" src="assets/images/2019/07/sms_settings.png" alt="" width="1100" height="580" />		</section>
+ 		 		<section id="currency-settings">
+			<div class="page-header"><h3>Currency Settings</h3><hr class="notop"></div>
+			Currency settings are a prominent key role in any system. Therefore, LaraOffice provides the platform to manage all the currency-related features from this Currency Settings.
+
+<strong><br><br><img class="aligncenter size-full wp-image-2547" src="assets/images/2019/07/currency_settinfs.png" alt="" width="1100" height="559" />Currency position:</strong>You can set your currency position whether it is left or right.
+
+<strong>Display currency: </strong>It manages the code format you want to display on your currency.
+
+<strong>Thousand separators</strong>: separate a thousand values by setting the count.
+
+<strong>Decimal separator:</strong> Separate the decimals values with spaces or by setting the count.
+
+<strong>Currency layer API key:</strong>You can set your API key value.
+
+We can update currencies by placing the <strong>Currency API key</strong> to manage all the currency rates based on Base Currency value.		</section>
+ 		 		<section id="payment-gateways-settings">
+			<div class="page-header"><h3>Payment Gateways Settings</h3><hr class="notop"></div>
+			There are three types of Payment Gateway settings that exist in this LaraOffice,
+<ul>
+ 	<li>PayU</li>
+ 	<li>PayPal</li>
+ 	<li>Stripe</li>
+</ul>
+These are used to manage the transactions between all the Users who are involved in payment-related fields. By giving respective Keys, Tokens, Authentication ID's etc we can make the transactions.
+
+For <strong>PayU</strong><strong> Settings:</strong>
+
+<br><br><img class="aligncenter size-full wp-image-2543" src="assets/images/2019/07/payment_gateways1.png" alt="" width="1100" height="556" />In order to manage the PayU account, add the account details in this PayU settings.
+
+<strong>Salt: </strong>Simply your account id.
+
+<strong>Is test mode: </strong>If yes, better to use duplicate PayU account details.
+
+<strong>Working key: </strong>You can add your key here.
+
+<strong>Merchant key: </strong>You can add your merchant key.
+
+<strong>PayU provider: </strong>In this PayU settings, there are two types of providers:
+
+1.PayUmoney
+
+2.PayUbiz.
+
+<strong>Popup title: </strong>The alert title that is displayed when a payment is done can be modified in this field.
+
+For <strong>Paypal Settings:</strong>
+
+<strong><br><br><img class="aligncenter size-full wp-image-2544" src="assets/images/2019/07/payment_gateways2.png" alt="" width="1100" height="563" />Email</strong>: Set your email.
+
+<b>Image:</b> Set your image that is to be displayed for your Paypal account.
+
+<a href="#currencies"><strong>Currency</strong></a>: You can set your currency.
+
+<strong>Account type</strong>: set your account type.
+
+For <strong>Stripe</strong><strong> Settings:</strong>
+
+<br><br><img class="aligncenter size-full wp-image-2545" src="assets/images/2019/07/payment_gateways3.png" alt="" width="1100" height="587" />Like PayU and Paypal account you can set your Stripe account details in Strip settings.
+
+All the above payment gateways will be reflected in all the payment fields in LaraOffice system.		</section>
+ 		 		<section id="email-settings">
+			<div class="page-header"><h3>Email Settings</h3><hr class="notop"></div>
+			These settings are used to send the Email to Users by giving respective Email details to perform the perfect action.
+
+<strong><br><br><img class="aligncenter size-full wp-image-2538" src="assets/images/2019/07/email_settings-1.png" alt="" width="1100" height="553" />Mail Host</strong>: A<b>mail host</b> resolves email addresses that provide your network with a remote connection.
+
+<strong>Mail Port:</strong> Emailservers across the Internet use protocols for sending and retrievingemails service which listens to a specificportto deliver services.
+
+<strong>Mail Driver</strong>: The program which interacts with a particular email by a server.
+
+By default, mail trap details are used to email settings. In the above <strong>Mail Driver, </strong>you can use mail trap, SMTP, Sendmail, etc.		</section>
+ 		 		<section id="site-settings">
+			<div class="page-header"><h3>Site Settings</h3><hr class="notop"></div>
+			The whole system is controlled by this Site settings only. The main key functionalities will be operated from these settings excluding Sales, Accounting sections, etc.
+
+<strong>Site Settings</strong> consists of following fields such as:
+
+<label for="site_title"><strong>Site Title</strong>: The title of the <label for="site_title">Site</label> name. </label>
+
+<label for="site_title">For eg:</label>
+
+<label for="site_title"><br><br><img class="aligncenter size-full wp-image-2234" src="assets/images/2019/07/site_name1-2.png" alt="" width="1100" height="218" /></label>
+
+<label for="site_logo"><strong>Site Logo</strong>: LaraOffice Logo. You can set your logo in site settings and it will show on the left top corner of your dashboard.</label>
+
+<label for="site_logo"><br><br><img class="aligncenter size-full wp-image-2236" src="assets/images/2019/07/site_logo1-4.png" alt="" width="395" height="129" /></label>
+
+<label for="site_favicon"><strong>Favicon</strong>: It will Shows on tabs.</label>
+
+<label for="site_favicon"><br><br><img class="aligncenter size-full wp-image-2235" src="assets/images/2019/07/fevicon.png" alt="" width="443" height="173" /></label>
+
+<label for="site_address"><strong>Address</strong>: The address of the Company.</label>
+
+<label for="site_phone"><strong>Site Phone</strong>: Contact number.</label>
+
+<label for="system_timezone"><strong>Time Zone</strong>: Site time zone.</label>
+
+<label for="contact_email"><strong>Contact Email</strong>: The default <label for="site_phone"><label for="contact_email">Email for contact</label>.</label></label>
+
+<label for="rights_reserved"><strong>CopyRights</strong>: Reserved rights on this site to this company.</label>
+
+<label for="date_format"><strong>Date Format</strong>: Site date format as per your requirement.</label>
+
+<label for="products_selection"><strong>Products Selection</strong>: Products selection type. It will reflect to products list based on enable products sliders field. If <strong>E</strong><strong>nable products slider</strong> is "YES" product selection field value will be applied to all products list in every tab/module and vice-versa.</label>
+
+<label for="enable_products_slider"><strong>Enable Products Slider</strong>: If Yes, Slider is enabled.</label>
+
+<label for="slider_type"><strong>Settings Type</strong>: Slider type settings can be customized.</label>
+
+<label for="message_type"><strong>Message Type</strong>: Notification message when we perform an action(notify/sweet alert/on page).</label>
+
+<label for="use-dynamic-menu"><strong>Use dynamic menu</strong>: Select Yes/No.</label>
+
+<label for="statistics-type"><strong>Summary display type</strong>: The type of Summary dashboards in Invoices, Quotes etc(circle, progress, default).</label>
+
+<label for="autoclose_tickets_after"><strong>Auto close Tickets After</strong>: Select a value to close the ticket after the number of days.</label>
+
+<label for="delete_activity_log_older_than"><strong>Delete Activity Log Older Than</strong>: <label for="autoclose_tickets_after">Select a value to <label for="delete_activity_log_older_than">Delete</label> the older log after the number of days.</label></label>
+
+<strong>Add new type</strong>: Add new type of symbol/button.
+
+<label for="default_payment_gateway"><strong>Default Payment Gateway</strong>: Making a payment, it shows default payment gateway.</label>
+
+<label for="default_sms_gateway"><strong>Default SMS Gateway</strong>: Sending SMS from default SMS gateway.</label>
+
+<br><br><img class="aligncenter size-full wp-image-1757" src="assets/images/2019/07/site_settings_master_settings.png" alt="" width="1100" height="562" />
+
+<br><br><img class="aligncenter size-full wp-image-1758" src="assets/images/2019/07/site_settings_master_settings2.png" alt="" width="1100" height="324" />		</section>
+ 		 		<section id="seo-settings">
+			<div class="page-header"><h3>SEO Settings</h3><hr class="notop"></div>
+			SEO settings of LaraOffice allow search engines in triggering this software as the highest prioritized( outranked) option for their search query. The below fields related to Seo settings will perform on Keywords, Google Analytics.
+
+<strong><br><br><img class="aligncenter size-full wp-image-2533" src="assets/images/2019/07/seo_settings.png" alt="" width="1100" height="563" />Meta description : </strong>This data field describes the complete overview of the LaraOffice.
+
+<strong>Meta keywords : </strong>The entity of keywords that helps to outrank the LaraOffice inthe search engines.
+
+<strong>Google Analytics : </strong>A tool that keeps track of all the searches related to this LaraOffice system.
+
+		</section>
+ 		<h1 id="generated-reports">Generated Reports</h1> 		<section id="expense-report">
+			<div class="page-header"><h3>Expense Report</h3><hr class="notop"></div>
+			We can easily understand all the expenses by the graphical representation by searching with various dates it shows the expenses on the respective date only by giving the type of expense like created, entry dates.
+
+Go to <strong>Generated Reports</strong>--&gt;Click on <strong>Expense Reports</strong>.
+<ul class="simple">
+ 	<li><strong>Date Range</strong>  You can set a date range you would like to know this report to include information about it.</li>
+ 	<li><strong>Type</strong>  Only display expenses in a specific type</li>
+</ul>
+<br><br><img class="aligncenter size-full wp-image-2528" src="assets/images/2019/07/expenses_reports.png" alt="" width="1100" height="579" />In X-axis, it shows the date fields.
+
+In Y-axis, it shows the Base Currency.		</section>
+ 		 		<section id="income-report">
+			<div class="page-header"><h3>Income Report</h3><hr class="notop"></div>
+			We can easily understand all the Incomes by graphical representation by searching with various dates it shows the Incomes on respective date only by giving the type of Income like created, entry dates.
+
+Go to <strong>Generated Reports</strong>--&gt;Click on <strong>IncomeReports</strong>.
+<ul class="simple">
+ 	<li><strong>Date Range</strong>  You can set a date range you would like to know this report to include information about it.</li>
+ 	<li><strong>Type</strong>  Only display Incomes in a specific type</li>
+</ul>
+<br><br><img class="aligncenter size-full wp-image-2521" src="assets/images/2019/07/income_report-1.png" alt="" width="1100" height="587" />In X-axis, it shows the date fields.
+
+In Y-axis, it shows the Base Currency.		</section>
+ 		 		<section id="users-report">
+			<div class="page-header"><h3>Users Report</h3><hr class="notop"></div>
+			We can easily understand all the Users who are joined in a system by graphical model by searching with various dates to know the Users who are joined on respective dates.
+
+Go to <strong>Generated Reports</strong>--&gt;Click on <strong>UsersReports</strong>.
+<ul class="simple">
+ 	<li><strong>Date Range</strong>  You can set a date range you would like to know this report to include information about it.</li>
+</ul>
+<br><br><img class="aligncenter size-full wp-image-2526" src="assets/images/2019/07/user_reports.png" alt="" width="1100" height="567" />In X-axis, it shows the date fields.
+
+In Y-axis, it shows the number of persons are joined.		</section>
+ 		 		<section id="user-roles">
+			<div class="page-header"><h3>User Roles</h3><hr class="notop"></div>
+			We can easily understand all the User Roles by Pie-chart model by searching with various dates it shows the User roles on the respective date.
+
+Go to <strong>Generated Reports</strong>--&gt;Click on <strong>User Roles Reports</strong>.
+<ul class="simple">
+ 	<li><strong>Date Range</strong>  You can set a date range you would like to know this report to include information about it.</li>
+</ul>
+<br><br><img class="aligncenter size-full wp-image-2167" src="assets/images/2019/07/user_roles_report.png" alt="" width="706" height="326" />
+
+Each and every role has individual color to represent the number of roles easily.		</section>
+ 		 		<section id="tasks-report">
+			<div class="page-header"><h3>Tasks Report</h3><hr class="notop"></div>
+			We can easily understand all the tasks by graphical representation by searching with various dates it shows the tasks on the respective date.
+
+Go to <strong>Generated Reports</strong>--&gt;Click on <strong>Tasks Reports</strong>.
+<ul class="simple">
+ 	<li><strong>Date Range</strong>  You can set a date range you would like to know this report to include the information about it.</li>
+</ul>
+<br><br><img class="aligncenter size-full wp-image-2519" src="assets/images/2019/07/tasks_reports.png" alt="" width="1100" height="587" />In X-axis, it shows the date fields.
+
+In Y-axis, it shows the number of tasks.		</section>
+ 		 		<section id="assets-report">
+			<div class="page-header"><h3>Assets Report</h3><hr class="notop"></div>
+			We can easily understand all the AssetsManagament by graphical representation by searching with various dates it shows the Assets on the respective date.
+
+Go to<strong>Generated Reports</strong>&gt;Click on <strong>Assets Reports</strong>.
+<ul class="simple">
+ 	<li><strong>Date Range</strong>  You can set a date range you would like to know this report to include the information about it.</li>
+</ul>
+<br><br><img class="aligncenter size-full wp-image-2514" src="assets/images/2019/07/assets_reports-1.png" alt="" width="1100" height="585" />In X-axis, it shows the date fields.
+
+In Y-axis, it shows the number of assets.		</section>
+ 		 		<section id="products-report">
+			<div class="page-header"><h3>Products Report</h3><hr class="notop"></div>
+			We can easily understand all the Products by graphical representation by searching with various dates it shows the Products on respective date.
+
+Go to<strong>Generated Reports</strong>&gt;Click on <strong>Products Reports</strong>.
+<ul class="simple">
+ 	<li><strong>Date Range</strong>  You can set a date range you would like to know this report to include the information about it.</li>
+</ul>
+<br><br><img class="aligncenter size-full wp-image-2535" src="assets/images/2019/07/products_reports-1.png" alt="" width="1100" height="580" />In X-axis, it shows the date fields.
+
+In Y-axis, it shows the number of Products.
+<div class="margin-top-12 social-kb-wrap">
+<div class="social-box"></div>
+</div>		</section>
+ 		 		<section id="purchase-orders-report">
+			<div class="page-header"><h3>Purchase Orders Report</h3><hr class="notop"></div>
+			We can easily understand all the Purchase Orders by graphical representation. By searching with various dates,it shows the Purchase Orders on respective date only by giving the type of Purchase Orders like created, entry dates.
+
+Go to<strong>Generated Reports</strong>&gt;Click on <strong>Purchase Orders Reports</strong>.
+<ul class="simple">
+ 	<li><strong>Date Range</strong> Set the date range to know this report analysis including the information about it.</li>
+ 	<li><strong>Type</strong> Only display Incomes in a specific type</li>
+</ul>
+<br><br><img class="aligncenter size-full wp-image-2510" src="assets/images/2019/07/purchase_order_report.png" alt="" width="1100" height="580" />In X-axis, it shows the date fields.
+
+In Y-axis, it shows the number of Purchase Orders.		</section>
+ 		<section id="sources_and_credits">
+	<div class="page-header"><h3>Sources and Credits</h3><hr class="notop"></div>
+<h6 style="font-family:Lucida Sans Unicode;">
+	* CodeIgniter 3.x (https://codeigniter.com/)</h6>
+<h6 style="font-family:Lucida Sans Unicode;">
+	* My SQL (https://www.mysql.com/)</h6>
+<h6 style="font-family:Lucida Sans Unicode;">
+	* Bootstrap v3.3.6 (http://getbootstrap.com), Copyright 2011-2014 Twitter, Inc. 
+	Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)</h6>
+<h6 style="font-family:Lucida Sans Unicode;">
+	* Font Awesome: License: SIL OFL 1.1, http://scripts.sil.org/OFL</h6>
+</section>
+
+
+
+
+	</div>
+</body>
+</html>

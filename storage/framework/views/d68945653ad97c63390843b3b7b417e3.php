@@ -1,0 +1,157 @@
+<?php $__env->startSection('content'); ?>
+<section class="login-block">
+    <div class="container">
+    <div class="row">
+      <div class="col-xl-8 col-lg-8 col-sm-12 col-12 banner-sec">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                 <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
+            <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+
+       <?php
+        $carousel_one = getSetting('carousel_one','login-settings');
+        $carousel_two = getSetting('carousel_two','login-settings');
+        $carousel_three = getSetting('carousel_three','login-settings');
+        $login_logo = getSetting('login_logo','login-settings');
+        ?>
+
+      <img class="d-block img-fluid" src="<?php echo e(IMAGE_PATH_SETTINGS.$carousel_one); ?>" alt="First slide">
+      <div class="carousel-caption d-none d-md-block">
+        <div class="banner-text lo-banner-text">
+            <h2><?php echo e(getSetting('carousel_head_one','login-settings')); ?></h2>
+            <p><?php echo e(getSetting('carousel_para_one','login-settings')); ?></p>
+        </div>  
+  </div>
+    </div>
+    <div class="carousel-item">
+     
+      <img class="d-block img-fluid" src="<?php echo e(IMAGE_PATH_SETTINGS.$carousel_two); ?>" alt="Second slide">
+      <div class="carousel-caption d-none d-md-block">
+        <div class="banner-text lo-banner-text">
+            <h2><?php echo e(getSetting('carousel_head_two','login-settings')); ?></h2>
+            <p style="overflow:hidden;"><?php echo e(getSetting('carousel_para_two','login-settings')); ?></p>
+        </div>  
+    </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block img-fluid" src="<?php echo e(IMAGE_PATH_SETTINGS.$carousel_three); ?>" alt="Third slide">
+      <div class="carousel-caption d-none d-md-block">
+        <div class="banner-text lo-banner-text">
+            <h2><?php echo e(getSetting('carousel_head_three','login-settings')); ?></h2>
+            <!--<a href="#" class="btn btn-video float-left" data-toggle="modal" data-target="#myModal"><p class="text-up"><i class="material-icons">play_circle_outline</i>Watch Demo</p></a>-->
+    
+        </div>  
+    </div>
+  </div>
+            </div>     
+            
+        </div>
+    </div>
+        
+
+
+        <div class="col-xl-4 col-lg-4 col-sm-12 col-12 login-sec">
+         
+            <h2 class="text-center"><?php echo app('translator')->get('custom.app_sign_in'); ?></h2>
+
+            <?php
+              $login_logo_enable = getSetting('login_logo_enable','login-settings');
+              if($login_logo_enable === 'Yes'){
+            ?>
+
+             <?php if($login_logo && file_exists(getSettingsPath() . $login_logo)): ?>
+            <p class="single-line"><img src="<?php echo e(IMAGE_PATH_SETTINGS.$login_logo); ?>"  height="" width="180"></p>  
+            <?php endif; ?>
+
+              <?php
+            } else {
+             ?>
+
+              <p class="single-line"><?php echo e(getSetting('site_title','site_settings')); ?></p>   
+
+           <?php }  ?>
+          
+                         <?php if(count($errors) > 0): ?>
+                        <div class="alert alert-danger">
+                           <!--  <strong><?php echo app('translator')->get('quickadmin.qa_whoops'); ?></strong> <?php echo app('translator')->get('quickadmin.qa_there_were_problems_with_input'); ?>:
+                            <br><br> -->
+                            <ul>
+                                <?php $__currentLoopData = $errors->all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $error): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                    <li><?php echo e($error); ?></li>
+                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                            </ul>
+                        </div>
+                    <?php endif; ?>
+
+                    <?php if(Session::has('message')): ?>                        
+                      <div class="alert alert-<?php echo e(Session::get('status', 'info')); ?>">
+                      &nbsp;&nbsp;&nbsp;<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <?php echo e(Session::get('message')); ?>
+
+                      </div>                    
+                    <?php endif; ?>
+                    
+
+            <form class="login-form"
+             role="form"
+            method="POST"
+            action="<?php echo e(url('login')); ?>"    
+              >
+
+              <?php echo csrf_field(); ?>
+
+              <div class="form-group">
+         <label for="exampleInputEmail1"><?php echo app('translator')->get('global.app_email'); ?></label>
+          <input type="email" 
+          class="form-control"
+          name="email"
+          placeholder="Enter Email"
+          value="<?php echo e(old('email')); ?>">   
+     
+           </div>
+
+
+             <div class="form-group">
+             <label for="exampleInputPassword1"><?php echo app('translator')->get('global.app_password'); ?></label>
+             <input type="password" 
+             class="form-control"
+             name="password" 
+             placeholder="Enter Your Password">
+           </div>
+  
+  
+    <div class="form-check">
+    <label class="form-check-label">
+      <input type="checkbox" name="remember" class="form-check-input">
+      <small><?php echo app('translator')->get('quickadmin.qa_remember_me'); ?></small>
+    </label>
+
+    <button type="submit" class="btn btn-login float-right"><?php echo app('translator')->get('global.app_login'); ?></button>
+  </div>
+
+                  <div class="form-group">
+                            <div class="exampleInputPassword1">
+                                <a href="<?php echo e(route('auth.password.reset')); ?>" style="font-size: 14px;"><?php echo app('translator')->get('global.app_forgot_password'); ?></a>
+                            </div>
+                        </div>
+
+  
+        </form>
+
+        </div>
+
+ 
+   </div>
+
+
+  
+</div>
+
+
+</section>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.auth', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\laraoffice\resources\views/auth/login.blade.php ENDPATH**/ ?>
